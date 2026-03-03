@@ -1,0 +1,27 @@
+{
+  "name": "thorium-reader-conformance",
+  "version": "1.0.0",
+  "description": "Thorium Reader Accessibility Conformance Reports",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "watch": "eleventy --watch"
+  },
+  "keywords": [
+    "thorium",
+    "reader",
+    "accessibility",
+    "conformance",
+    "acr",
+    "wcag",
+    "uaag"
+  ],
+  "author": "EDRLab",
+  "license": "BSD 3-Clause",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-img": "^3.1.0"
+  },
+  "dependencies": {}
+}
