@@ -12,14 +12,6 @@
       "termsOfUse": "/documents/desktop3/terms-of-use/",
       "privacyPolicy": "/documents/desktop3/privacy-policy/"
     },
-    "desktop4": {
-      "name": "Thorium Reader Desktop 4.x",
-      "status": "active",
-      "description": "Thorium Reader Desktop version 4 series",
-      "technicalSpec": "/documents/desktop4/technical-spec/",
-      "termsOfUse": "/documents/desktop4/terms-of-use/",
-      "privacyPolicy": "/documents/desktop4/privacy-policy/"
-    },
     "web": {
       "name": "Thorium Reader Web",
       "status": "beta",
