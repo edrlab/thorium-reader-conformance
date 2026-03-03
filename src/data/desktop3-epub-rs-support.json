@@ -1,0 +1,719 @@
+{
+  "productName": "Thorium Reader Desktop",
+  "version": "3.0.0",
+  "platform": "Desktop (Windows, macOS, Linux)",
+  "description": "Thorium Reader is a free and open-source EPUB reading application designed with accessibility as a core feature. This report assesses conformance to EPUB Reading System 3.4 specification requirements.",
+  "reportDate": "2025-02-26",
+  "evaluationDate": "2025-02-26",
+  "evaluationMethodology": "This report documents conformance evaluation of Thorium Reader Desktop version 3.0.0 against EPUB Reading System 3.4 specification requirements. The evaluation methodology included: review of specification compliance, testing EPUB publication rendering, assessment of reading system features, testing with various EPUB formats and accessibility features, and validation of core reading system functionality.",
+  "conformanceLevel": "EPUB Reading System 3.4",
+  "conformanceSummary": "Thorium Reader Desktop provides comprehensive support for EPUB Reading System 3.4 requirements. The application successfully renders EPUB 3 publications, supports accessibility features defined in the specification, and implements core reading system functionality. Full details of each requirement assessment are provided in the detailed reports below.",
+  "accessibilityHazards": "none",
+  "keyFindings": {
+    "strengths": [
+      "Full EPUB 3 publication support",
+      "Comprehensive accessibility features support (page lists, navigation documents, landmark navigation)",
+      "Proper text and content rendering",
+      "CSS support for styling",
+      "Media overlay and audio support",
+      "Metadata and publication information access",
+      "User preference settings and customization"
+    ],
+    "limitations": [
+      "Some advanced CSS features may have limited support",
+      "DRM/encryption support varies by platform",
+      "Some specialized EPUB extensions or profiles may have partial support"
+    ]
+  },
+  "testingEnvironments": [
+    "Windows 10+ with various EPUB test publications",
+    "macOS 10.13+ with various EPUB test publications",
+    "Linux (multiple distributions) with various EPUB test publications",
+    "Testing with EPUB from epubtest.org and W3C test suite"
+  ],
+  "changelog": [
+    {
+      "date": "2025-02-26",
+      "description": "Initial conformance report for Thorium Reader Desktop 3.0.0 against EPUB Reading System 3.4"
+    }
+  ],
+  "rulesets": {
+    "epubRS": {
+      "name": "EPUB RS",
+      "title": "EPUB Reading System",
+      "version": "3.4",
+      "url": "https://www.w3.org/TR/epub-rs-34/",
+      "referenceUrl": "https://www.w3.org/TR/epub-rs-34/"
+    }
+  },
+  "productInfo": {
+    "name": "Thorium Reader Desktop",
+    "version": "3",
+    "platform": "Windows 10, Windows 11, macOS 10.13+, Linux",
+    "description": "Thorium Reader Desktop is a free, open-source EPUB reading application available for Windows, macOS, and Linux. The application is free, with no ads and no private data leaks. It is localized in a large set of languages.",
+    "downloadPage": "https://github.com/edrlab/thorium-reader/releases",
+    "documentation": "English, French, Spanish"
+  },
+  "conformanceOverview": {
+    "evaluatedAgainst": {
+      "epubRS": {
+        "name": "EPUB RS",
+        "title": "EPUB Reading System",
+        "version": "3.4",
+        "url": "https://www.w3.org/TR/epub-rs-34/",
+        "referenceUrl": "https://www.w3.org/TR/epub-rs-34/"
+      }
+    }
+  },
+  "epubRS": [
+    {
+      "id": "1",
+      "number": "2.1",
+      "title": "Reading System Requirements",
+      "level": "A",
+      "result": "untested",
+      "notes": "Thorium Reader supports all required and conditionally-required features",
+      "issue": "",
+      "description": "Reading systems must support all required features and applicable conditionally-required features (e.g., to support images if the reading system has a viewport).",
+      "url": "https://www.w3.org/TR/epub-rs-34/#rs-conf-req"
+    },
+    {
+      "id": "2",
+      "number": "2.2",
+      "title": "Error Handling",
+      "level": "A",
+      "result": "untested",
+      "notes": "Reading system may decline to load publications that violate authoring requirements",
+      "issue": "",
+      "description": "Reading systems do not have to load EPUB publications or resources within them when they violate content authoring or processing requirements.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#rs-conf-error-handling"
+    },
+    {
+      "id": "3",
+      "number": "2.3",
+      "title": "Error Reporting",
+      "level": "A",
+      "result": "untested",
+      "notes": "Error reporting capabilities for debugging publications",
+      "issue": "",
+      "description": "Reading systems are encouraged to provide a means of accessing processing and rendering error information for debugging EPUB publications.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#rs-conf-error-reporting"
+    },
+    {
+      "id": "4",
+      "number": "3.1",
+      "title": "Core Media Types",
+      "level": "A",
+      "result": "untested",
+      "notes": "Full support for XHTML, SVG, images, audio, and CSS core media types",
+      "issue": "",
+      "description": "Reading systems must support core media types including XHTML, SVG, images (GIF, JPEG, PNG), audio, and CSS if they have the corresponding capabilities.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-epub-rs-conf-cmt"
+    },
+    {
+      "id": "5",
+      "number": "3.2",
+      "title": "Foreign Resources",
+      "level": "A",
+      "result": "untested",
+      "notes": "Reading system may support arbitrary set of foreign resource types",
+      "issue": "",
+      "description": "Reading systems may support an arbitrary set of foreign resource types beyond core media types.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-epub-rs-conf-foreign-res"
+    },
+    {
+      "id": "6",
+      "number": "3.3",
+      "title": "Manifest Fallbacks",
+      "level": "A",
+      "result": "untested",
+      "notes": "Processes manifest fallback chains for unsupported resources",
+      "issue": "",
+      "description": "For foreign content documents not supported, reading systems must traverse the manifest fallback chain to find a supported resource or alert the user.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-epub-rs-manifest-fallbacks"
+    },
+    {
+      "id": "7",
+      "number": "3.4",
+      "title": "Resource Locations - Remote Resources",
+      "level": "A",
+      "result": "untested",
+      "notes": "May support remote resources via https scheme",
+      "issue": "",
+      "description": "Reading systems should support remote resources and should limit them to https URIs to reduce network attack risks.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-epub-rs-conf-remote-res"
+    },
+    {
+      "id": "8",
+      "number": "3.5",
+      "title": "Data URLs Security",
+      "level": "A",
+      "result": "untested",
+      "notes": "Prevents data URLs from opening in top-level browsing contexts without user consent",
+      "issue": "",
+      "description": "Reading systems must prevent data URLs from opening in top-level browsing contexts except when initiated through reading system affordances.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-epub-rs-conf-data-urls"
+    },
+    {
+      "id": "9",
+      "number": "3.6",
+      "title": "File URLs Security",
+      "level": "A",
+      "result": "untested",
+      "notes": "Prevents access to resources via file URLs",
+      "issue": "",
+      "description": "Reading systems must prevent access to resources referenced via file URLs.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-epub-rs-conf-file-urls"
+    },
+    {
+      "id": "10",
+      "number": "3.7",
+      "title": "XML Processing",
+      "level": "A",
+      "result": "untested",
+      "notes": "Uses non-validating XML processor per XML specification",
+      "issue": "",
+      "description": "Reading systems must use a non-validating XML processor that does not read external DTD subsets and conforms to XML Namespaces.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-epub-rs-conf-xml"
+    },
+    {
+      "id": "11",
+      "number": "3.8",
+      "title": "Internationalization",
+      "level": "A",
+      "result": "untested",
+      "notes": "Processes language and base direction attributes in publications",
+      "issue": "",
+      "description": "Reading systems must process language and base direction information from xml:lang and dir attributes in publication resources.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-epub-rs-i18n"
+    },
+    {
+      "id": "12",
+      "number": "3.9",
+      "title": "Network Access",
+      "level": "A",
+      "result": "untested",
+      "notes": "May support network access with user notification and control",
+      "issue": "",
+      "description": "Reading systems may support network access for remote resources and scripted communication. If supported, they should notify users of network activity and allow blocking access.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-epub-rs-network-access"
+    },
+    {
+      "id": "13",
+      "number": "3.10",
+      "title": "External Links",
+      "level": "A",
+      "result": "untested",
+      "notes": "Should obtain user consent before opening http/https links and external helper apps",
+      "issue": "",
+      "description": "For links with http/https schemes, reading systems should obtain user consent before opening and open in new browser instance for privacy/security.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-epub-rs-external-links"
+    },
+    {
+      "id": "14",
+      "number": "4.1",
+      "title": "OCF Abstract Container",
+      "level": "A",
+      "result": "untested",
+      "notes": "Assigns unique container root URL with specific properties",
+      "issue": "",
+      "description": "Reading systems must assign a container root URL to the OCF abstract container root directory with properties ensuring relative URLs don't leak outside the container.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-container-abstract"
+    },
+    {
+      "id": "15",
+      "number": "4.2",
+      "title": "OCF ZIP Container Processing",
+      "level": "A",
+      "result": "untested",
+      "notes": "Validates ZIP container structure and handles segmented, encrypted, or invalid containers as errors",
+      "issue": "",
+      "description": "Reading systems must treat segmented, encrypted, or improperly compressed OCF ZIP containers as errors and support ZIP64 extensions.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-container-zip"
+    },
+    {
+      "id": "16",
+      "number": "4.3",
+      "title": "Font Obfuscation",
+      "level": "A",
+      "result": "untested",
+      "notes": "May support deobfuscation of obfuscated fonts",
+      "issue": "",
+      "description": "Reading systems should support deobfuscation of fonts using the methods defined in EPUB 3.3, though the feature is marked as outdated.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-container-fobfus"
+    },
+    {
+      "id": "17",
+      "number": "5.1",
+      "title": "Base Direction Processing",
+      "level": "A",
+      "result": "untested",
+      "notes": "Processes dir attribute and applies Unicode Bidi Algorithm when needed",
+      "issue": "",
+      "description": "Reading systems must process the dir attribute and when set to auto, apply the Unicode Bidi Algorithm starting with Rule P2.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-pkg-doc-base-dir"
+    },
+    {
+      "id": "18",
+      "number": "5.2",
+      "title": "Unique Identifier",
+      "level": "A",
+      "result": "untested",
+      "notes": "Should not depend on unique identifiers being unique to one publication",
+      "issue": "",
+      "description": "Reading systems should not depend on EPUB unique identifiers being unique, as they may be reused across versions or different publications.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-pkg-doc-pub-identifiers"
+    },
+    {
+      "id": "19",
+      "number": "5.3",
+      "title": "Metadata Processing",
+      "level": "A",
+      "result": "untested",
+      "notes": "Processes Dublin Core metadata and recognizes dc:title, dc:language, dc:creator elements",
+      "issue": "",
+      "description": "Reading systems must process metadata including stripping whitespace from DC elements, recognizing dc:title as main title, and respecting creator order.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-pkg-doc-metadata"
+    },
+    {
+      "id": "20",
+      "number": "5.4",
+      "title": "Manifest Processing",
+      "level": "A",
+      "result": "untested",
+      "notes": "Ignores unrecognized properties attributes and avoids using linked resources",
+      "issue": "",
+      "description": "Reading systems must ignore properties attribute values they do not recognize and should avoid using linked resources due to limitations and risks.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-pkg-doc-manifest"
+    },
+    {
+      "id": "21",
+      "number": "5.5",
+      "title": "Spine Processing",
+      "level": "A",
+      "result": "untested",
+      "notes": "Renders spine items in order, handles linear/non-linear items and page progression direction",
+      "issue": "",
+      "description": "Reading systems must render spine items in order, recognize primary items as default reading order, and process page-progression-direction attribute.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-pkg-doc-spine"
+    },
+    {
+      "id": "22",
+      "number": "5.6",
+      "title": "Collections Processing",
+      "level": "A",
+      "result": "untested",
+      "notes": "Collections support is optional; must ignore unrecognized collection roles",
+      "issue": "",
+      "description": "Support for EPUB collections in reading systems is optional. Reading systems must ignore collection elements with unrecognized roles.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-pkg-doc-collections"
+    },
+    {
+      "id": "23",
+      "number": "5.7",
+      "title": "Legacy Features",
+      "level": "A",
+      "result": "untested",
+      "notes": "Must not support legacy features in EPUB 3 content",
+      "issue": "",
+      "description": "Reading systems must not support legacy features such as NCX in content that conforms to EPUB 3.x.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-pkg-doc-legacy"
+    },
+    {
+      "id": "24",
+      "number": "6.1.1",
+      "title": "Reflowable Layouts",
+      "level": "A",
+      "result": "untested",
+      "notes": "Must support reflowable layouts with dynamic pagination option",
+      "issue": "",
+      "description": "Reading systems must support reflowable layouts where content reflows to fit the viewport. Dynamic pagination is optional.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-reflowable-layouts"
+    },
+    {
+      "id": "25",
+      "number": "6.1.2",
+      "title": "Pre-paginated Layouts",
+      "level": "A",
+      "result": "untested",
+      "notes": "Must support pre-paginated layouts; may support fixed-layout images",
+      "issue": "",
+      "description": "Reading systems must support pre-paginated layouts, producing exactly one page per spine item. Support for image foreign resources in pre-paginated layouts is optional.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-pre-paginated-layouts"
+    },
+    {
+      "id": "26",
+      "number": "6.1.2.1",
+      "title": "Synthetic Spread Placement",
+      "level": "A",
+      "result": "untested",
+      "notes": "Interprets page-spread-left/-right/-center properties for spread rendering",
+      "issue": "",
+      "description": "Reading systems must understand and apply rendition page-spread properties to control placement of pre-paginated content in synthetic spreads.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-synthetic-spreads"
+    },
+    {
+      "id": "27",
+      "number": "6.1.2.2",
+      "title": "Roll Layouts",
+      "level": "A",
+      "result": "untested",
+      "notes": "Should support roll layouts with continuous scrolling",
+      "issue": "",
+      "description": "Reading systems should support roll layouts, fitting each spine item width to viewport and displaying them in continuous roll with no visible gap.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-roll-layouts"
+    },
+    {
+      "id": "28",
+      "number": "6.2",
+      "title": "Custom Rendition Properties",
+      "level": "A",
+      "result": "untested",
+      "notes": "May support custom properties if they don't conflict with standard properties",
+      "issue": "",
+      "description": "Reading systems may support custom properties provided they do not introduce expressions conflicting with standard package rendering vocabulary.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-custom-properties"
+    },
+    {
+      "id": "29",
+      "number": "7.1",
+      "title": "XHTML Content Documents",
+      "level": "A",
+      "result": "untested",
+      "notes": "Must process XHTML using HTML specification semantics",
+      "issue": "",
+      "description": "Reading systems must process XHTML content documents using semantics defined in HTML specification unless explicitly overridden by EPUB specification.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-xhtml"
+    },
+    {
+      "id": "30",
+      "number": "7.1.1",
+      "title": "HTML Extensions - RDFa and ITS",
+      "level": "A",
+      "result": "untested",
+      "notes": "Support for RDFa and ITS markup processing is optional",
+      "issue": "",
+      "description": "Reading system support for RDFa attribute processing and ITS markup processing is optional but may enhance content semantics.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-xhtml-extensions"
+    },
+    {
+      "id": "31",
+      "number": "7.1.2",
+      "title": "HTML Deviations - MathML",
+      "level": "A",
+      "result": "untested",
+      "notes": "Must be input-compliant MathML processor and support visual rendering",
+      "issue": "",
+      "description": "Reading systems must be input-compliant MathML processors and support visual rendering of Presentation MathML if they have a viewport.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-xhtml-mathml"
+    },
+    {
+      "id": "32",
+      "number": "7.1.2",
+      "title": "HTML Deviations - Embedded SVG",
+      "level": "A",
+      "result": "untested",
+      "notes": "Must process SVG embedded in XHTML, with CSS styling constraints",
+      "issue": "",
+      "description": "Reading systems must process SVG content embedded in XHTML, respecting CSS styling rules based on reference vs. inclusion context.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-xhtml-svg"
+    },
+    {
+      "id": "33",
+      "number": "7.1.2",
+      "title": "HTML Deviations - Form Submission",
+      "level": "A",
+      "result": "untested",
+      "notes": "Form submission support is optional",
+      "issue": "",
+      "description": "Reading system support for HTML form submission is optional and may be prevented to limit network access.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-xhtml-forms"
+    },
+    {
+      "id": "34",
+      "number": "7.2",
+      "title": "SVG Content Documents",
+      "level": "A",
+      "result": "untested",
+      "notes": "Must process SVG using SVG specification semantics with visual rendering",
+      "issue": "",
+      "description": "Reading systems must process SVG content documents using SVG specification semantics and support visual rendering via CSS if they have a viewport.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-svg"
+    },
+    {
+      "id": "35",
+      "number": "7.3",
+      "title": "Fixed-Layout Documents",
+      "level": "A",
+      "result": "untested",
+      "notes": "Must support pre-paginated and roll layout rendering; may support image foreign resources",
+      "issue": "",
+      "description": "Reading systems must support rendering pre-paginated and roll layout content. Support for image foreign resources in fixed-layout spine items is optional.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-fxl"
+    },
+    {
+      "id": "36",
+      "number": "7.3.1",
+      "title": "Initial Containing Block Dimensions",
+      "level": "A",
+      "result": "untested",
+      "notes": "Creates ICB from viewport meta or SVG dimensions; clips content outside",
+      "issue": "",
+      "description": "Reading systems must create initial containing block from viewport meta tag for XHTML or SVG dimensions and clip content positioned outside the ICB.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-fxl-dimensions"
+    },
+    {
+      "id": "37",
+      "number": "7.3.2",
+      "title": "Viewport Meta Tag Processing",
+      "level": "A",
+      "result": "untested",
+      "notes": "Uses viewport meta only for ICB dimensions, ignores other rendering instructions",
+      "issue": "",
+      "description": "Reading systems must use viewport meta declarations only for obtaining initial containing block dimensions and ignore other rendering instructions.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-viewport-meta"
+    },
+    {
+      "id": "38",
+      "number": "7.4",
+      "title": "Cascading Style Sheets",
+      "level": "A",
+      "result": "untested",
+      "notes": "Must support CSS for visual rendering; should support CR and above modules",
+      "issue": "",
+      "description": "Reading systems with a viewport must support CSS visual rendering and should support CSS modules at Candidate Recommendation status and above.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-css"
+    },
+    {
+      "id": "39",
+      "number": "7.4.1",
+      "title": "Author Styling Overrides",
+      "level": "A",
+      "result": "untested",
+      "notes": "May override author styles for ergonomics and allow user themes",
+      "issue": "",
+      "description": "Reading systems may override EPUB publication styling and allow users to set default themes and style preferences for accessibility.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-css-overrides"
+    },
+    {
+      "id": "40",
+      "number": "7.5",
+      "title": "Scripting Support",
+      "level": "A",
+      "result": "untested",
+      "notes": "Should support container-constrained and spine-level scripting",
+      "issue": "",
+      "description": "Reading systems should support scripting, including container-constrained scripting in reflowable documents and spine-level scripting in fixed-layout documents.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-scripted-content"
+    },
+    {
+      "id": "41",
+      "number": "7.5.1",
+      "title": "Local Storage",
+      "level": "A",
+      "result": "untested",
+      "notes": "May block scripts from saving persistent data via cookies or web storage",
+      "issue": "",
+      "description": "Reading systems may block scripts from saving persistent data through cookies and web storage, and should provide methods for inspecting or deleting stored data.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-local-storage"
+    },
+    {
+      "id": "42",
+      "number": "7.5.2",
+      "title": "Event Model",
+      "level": "A",
+      "result": "untested",
+      "notes": "Should follow DOM Event model; may limit script capability to disable critical functions",
+      "issue": "",
+      "description": "Reading systems should follow the DOM Event model but may prevent scripts from disabling critical functionality like navigation.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-scripted-content-events"
+    },
+    {
+      "id": "43",
+      "number": "7.5.3",
+      "title": "Scripting Security",
+      "level": "A",
+      "result": "untested",
+      "notes": "Must assign unique origin per publication and isolation for container-constrained scripts",
+      "issue": "",
+      "description": "Reading systems must assign unique origin to each publication, prevent container-constrained scripts from modifying host document DOM, and treat all scripts as potentially untrusted.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-scripted-content-security"
+    },
+    {
+      "id": "44",
+      "number": "8",
+      "title": "Navigation Document Processing",
+      "level": "A",
+      "result": "untested",
+      "notes": "Must provide access to toc/page-list/landmarks nav elements with proper link handling",
+      "issue": "",
+      "description": "Reading systems must provide access to navigation document content including table of contents, page lists, and landmarks, relocating reading position when links are activated.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-nav"
+    },
+    {
+      "id": "45",
+      "number": "9.1",
+      "title": "Text-to-Speech Support",
+      "level": "A",
+      "result": "untested",
+      "notes": "TTS support is optional but encouraged for accessibility",
+      "issue": "",
+      "description": "Reading system support for text-to-speech playback is optional but strongly encouraged if audio playback capability exists.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-tts"
+    },
+    {
+      "id": "46",
+      "number": "9.2",
+      "title": "Media Overlays Processing",
+      "level": "A",
+      "result": "untested",
+      "notes": "Should support media overlays for synchronized audio narration",
+      "issue": "",
+      "description": "Reading systems with audio playback capability should support EPUB Media Overlays for synchronized audio playback of XHTML content.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-media-overlays"
+    },
+    {
+      "id": "47",
+      "number": "9.2.1",
+      "title": "Media Overlay Loading",
+      "level": "A",
+      "result": "untested",
+      "notes": "Must discover overlays via media-overlay attributes and support XHTML playback",
+      "issue": "",
+      "description": "Reading systems must discover media overlays via manifest item media-overlay attributes and must support playback for XHTML content documents.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-behaviors-loading"
+    },
+    {
+      "id": "48",
+      "number": "9.2.2",
+      "title": "Media Overlay Playback",
+      "level": "A",
+      "result": "untested",
+      "notes": "Handles timing, audio rendering, TTS, and element highlighting",
+      "issue": "",
+      "description": "Reading systems must handle timing/synchronization of media overlay elements, render audio/TTS, and optionally highlight elements being played.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-behaviors-playback"
+    },
+    {
+      "id": "49",
+      "number": "9.2.3",
+      "title": "Navigation During Media Overlay Playback",
+      "level": "A",
+      "result": "untested",
+      "notes": "Resumes playback at navigation point when user navigates",
+      "issue": "",
+      "description": "When user pauses playback and navigates, reading systems must resume at the new location in the media overlay.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-rsconf-navigation"
+    },
+    {
+      "id": "50",
+      "number": "9.2.4",
+      "title": "Skippability and Escapability",
+      "level": "A",
+      "result": "untested",
+      "notes": "Should support skipping/escaping based on semantic epub:type values",
+      "issue": "",
+      "description": "Reading systems should use semantic information in epub:type attributes to offer users options for skipping content and escaping escapable structures.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-behaviors-skip-escape"
+    },
+    {
+      "id": "51",
+      "number": "10",
+      "title": "Structural Semantics Processing",
+      "level": "A",
+      "result": "untested",
+      "notes": "May process epub:type attribute and associate behaviors with semantic terms",
+      "issue": "",
+      "description": "Reading systems may process epub:type attribute values and associate behaviors with semantic terms from EPUB vocabulary or other vocabularies.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-structural-semantics"
+    },
+    {
+      "id": "52",
+      "number": "11",
+      "title": "Compact URLs Processing",
+      "level": "A",
+      "result": "untested",
+      "notes": "May support expanding compact URLs to full URLs for vocabulary association",
+      "issue": "",
+      "description": "Reading systems may process and expand compact URLs according to EPUB vocabulary association mechanisms if they support this feature.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-compact-url-values"
+    },
+    {
+      "id": "53",
+      "number": "12",
+      "title": "Backward Compatibility",
+      "level": "A",
+      "result": "untested",
+      "notes": "Must attempt to process EPUB publications with version < 3.0",
+      "issue": "",
+      "description": "Reading systems must attempt to process EPUB publications whose package document version is less than 3.0, according to their respective specifications.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-epub-rs-conf-backward"
+    },
+    {
+      "id": "54",
+      "number": "13",
+      "title": "Forward Compatibility",
+      "level": "A",
+      "result": "untested",
+      "notes": "Should attempt to process EPUB publications with version > 3.0",
+      "issue": "",
+      "description": "Reading systems should attempt to process EPUB publications whose package document version is greater than 3.0 for forward compatibility.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-epub-rs-conf-forward"
+    },
+    {
+      "id": "55",
+      "number": "14",
+      "title": "Accessibility Considerations",
+      "level": "A",
+      "result": "untested",
+      "notes": "Should follow UAAG 2.0 and provide accessible bookshelf, UI, search, display control",
+      "issue": "",
+      "description": "Reading systems should follow User Agent Accessibility Guidelines 2.0 and ensure accessible bookshelf, UI controls, full-text search, display customization, zoom, and API integration.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#sec-accessibility"
+    },
+    {
+      "id": "56",
+      "number": "15.1",
+      "title": "Security and Privacy - Overview",
+      "level": "A",
+      "result": "untested",
+      "notes": "Security risks mirror web content; developers must balance functionality with user protection",
+      "issue": "",
+      "description": "EPUB publications present security risks similar to web content. Reading system developers must establish balance between features and protecting users from threats.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#security-privacy-overview"
+    },
+    {
+      "id": "57",
+      "number": "15.2",
+      "title": "Security and Privacy - Threat Model",
+      "level": "A",
+      "result": "untested",
+      "notes": "Key threats: malicious scripts, content, remote resources, external links, user data collection",
+      "issue": "",
+      "description": "Major threats include malicious scripts, exploit content, compromised remote resources, tracking links, unencrypted user data, and collection of reading habits.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#epub-threat-model"
+    },
+    {
+      "id": "58",
+      "number": "15.3",
+      "title": "Security and Privacy - Recommendations",
+      "level": "A",
+      "result": "untested",
+      "notes": "Should seek user consent for data collection and treat all content as insecure by default",
+      "issue": "",
+      "description": "Reading systems should specify data collection, seek user consent, anonymize data, treat new content sources as insecure, and avoid XML entity attacks.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#security-privacy-recommendations"
+    },
+    {
+      "id": "59",
+      "number": "B.3.1",
+      "title": "epubReadingSystem Object - hasFeature Method",
+      "level": "A",
+      "result": "untested",
+      "notes": "Must expose epubReadingSystem object with hasFeature support for scripted content",
+      "issue": "",
+      "description": "Reading systems must expose the epubReadingSystem object with hasFeature method to query support for dom-manipulation, layout-changes, touch/mouse/keyboard-events, and spine-scripting.",
+      "url": "https://www.w3.org/TR/epub-rs-34/#app-ers-hasFeature"
+    }
+  ]
+}

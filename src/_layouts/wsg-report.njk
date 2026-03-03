@@ -1,0 +1,163 @@
+{% extends "./base.njk" %}
+
+{% block content %}
+<div class="conformance-report">
+  <section id="about-report">
+    <h2>About This Report</h2>
+    
+    {% set wsgData = wsg_support %}
+
+      <dl>
+        <dt>Product Name:</dt>
+        <dd>{{ wsgData.productName }}</dd>
+        <dt>Version:</dt>
+        <dd>{{ wsgData.version }}</dd>
+        <dt>Platform:</dt>
+        <dd>{{ wsgData.platform }}</dd>
+        <dt>Report Date:</dt>
+        <dd>{{ wsgData.reportDate }}</dd>
+        <dt>Evaluation Date:</dt>
+        <dd>{{ wsgData.evaluationDate }}</dd>
+      </dl>
+
+    <details>
+      <summary>Description</summary>
+      <p>{{ wsgData.description }}</p>
+      <p>{{ wsgData.conformanceSummary }}</p>
+    </details>
+
+    <details>
+      <summary>Key Findings</summary>
+      
+      {% if wsgData.keyFindings %}
+        {% if wsgData.keyFindings.strengths %}
+        <h4>Strengths</h4>
+        <ul>
+        {% for item in wsgData.keyFindings.strengths %}
+          <li>{{ item }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if wsgData.keyFindings.limitations %}
+        <h4>Limitations</h4>
+        <ul>
+        {% for item in wsgData.keyFindings.limitations %}
+          <li>{{ item }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+      {% endif %}
+    </details>
+
+    <details>
+      <summary>Changelog</summary>
+      {% if wsgData.changelog %}
+        <ul>
+        {% for entry in wsgData.changelog %}
+          <li><strong>{{ entry.date }}:</strong> {{ entry.description }}</li>
+        {% endfor %}
+        </ul>
+      {% else %}
+        <p>No changelog available yet.</p>
+      {% endif %}
+    </details>
+
+    <details>
+      <summary>
+        <h3 class="inline">Evaluation Methodology</h3>
+      </summary>
+      {% if wsgData.evaluationMethodology %}
+        <p>{{ wsgData.evaluationMethodology }}</p>
+      {% endif %}
+
+      {% if wsgData.testingEnvironments %}
+        <h4>Testing Environments</h4>
+        <ul>
+        {% for env in wsgData.testingEnvironments %}
+          <li>{{ env }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+
+      <h4>Standards & References</h4>
+      {% if wsgData.rulesets %}
+        <dl>
+        {% for key, ruleset in wsgData.rulesets %}
+          <dt>{{ ruleset.title }} ({{ ruleset.name }})</dt>
+          <dd>
+            Version: {{ ruleset.version }} - Reference: <a href="{{ ruleset.referenceUrl }}" target="_blank">{{ ruleset.referenceUrl }}</a>
+          </dd>
+        {% endfor %}
+        </dl>
+      {% endif %}
+    </details>
+  </section>
+
+  <hr />
+
+  <section id="conformance" class="js-tabs">
+    <h2>Detailed Assessment Results</h2>
+
+    {% if wsgData.wsg and wsgData.wsg.length > 0 %}
+    <div class="report-section">
+    <details>
+    <summary>
+      <h3 class="inline">Web Sustainability Guidelines Assessment</h3>
+      </summary>
+      <table class="responsive" id="wsg-results">
+        <thead>
+          <tr>
+            <th data-priority="1">Guideline & Category</th>
+            <th data-priority="2">Result</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for item in wsgData.wsg | sort(attribute='number') %}
+          <tr>
+            <td>
+              <details>
+                <summary class="sc-title">
+                  <a id="sc_wsg_{{ item.id }}" name="sc_wsg_{{ item.id }}"></a>
+                  <strong>{{ item.category }}:</strong> {{ item.number }} {{ item.title }}
+                </summary>
+                <p class="sc-text">{{ item.description | safe }}</p>
+                {% if item.url %}
+                <p class="issue"><a href="{{ item.url | safe }}" target="_blank">View Specification</a></p>
+                {% endif %}
+              </details>
+            </td>
+            <td class="result {{ item.result | lower }}">
+              <p class="label">{{ item.result }}</p>
+            </td>
+            <td>                
+            {% if item.notes %}
+              <p class="notes">{{ item.notes }}</p>
+            {% endif %}
+              </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+           </details>
+    </div>
+    {% endif %}
+
+  </section>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize DataTables if available
+    if (typeof jQuery !== 'undefined' && jQuery.fn.dataTable) {
+      jQuery('table.responsive').dataTable({
+        paging: false,
+        info: false,
+        responsive: true
+      });
+    }
+  });
+</script>
+
+{% endblock %}

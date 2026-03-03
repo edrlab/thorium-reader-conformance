@@ -1,0 +1,33 @@
+{
+  "productName": "Thorium Reader Android",
+  "version": "[VERSION]",
+  "platform": "Android",
+  "description": "[Product description - to be filled]",
+  "reportDate": "[YYYY-MM-DD]",
+  "evaluationDate": "[YYYY-MM-DD]",
+  "evaluationMethodology": "[Evaluation methodology - to be filled]",
+  "conformanceLevel": "[Conformance levels - to be filled]",
+  "conformanceSummary": "[Summary - to be filled]",
+  "accessibilityHazards": "[none/describe]",
+  "keyFindings": {
+    "strengths": ["[To be filled]"],
+    "limitations": ["[To be filled]"]
+  },
+  "testingEnvironments": ["[To be filled]"],
+  "changelog": [{"date": "[YYYY-MM-DD]", "description": "[To be filled]"}],
+  "rulesets": {
+    "uaag": {"name": "UAAG", "title": "User Agent Accessibility Guidelines", "version": "2.0", "url": "https://www.w3.org/TR/UAAG20-Reference/", "referenceUrl": "https://www.w3.org/TR/UAAG20/"},
+    "wcag": {"name": "WCAG", "title": "Web Content Accessibility Guidelines", "version": "2.2", "url": "https://www.w3.org/WAI/WCAG22/quickref/", "referenceUrl": "https://www.w3.org/WAI/WCAG22/"},
+    "epub": {"name": "EPUB Accessibility", "title": "EPUB 3 Accessibility", "version": "1.2", "url": "https://www.w3.org/TR/epub-a11y-12/", "referenceUrl": "https://www.w3.org/TR/epub-a11y-12/"},
+    "daisyURS": {"name": "DAISY URS", "title": "DAISY Reading Apps User Requirements", "version": "1.0", "url": "https://daisy.org/s/readingURS/FINAL-20251031", "referenceUrl": "https://daisy.org/s/readingURS/FINAL-20251031"}
+  },
+  "productInfo": {"name": "Thorium Reader Android", "version": "[VERSION]", "platform": "Android", "description": "[To be filled]", "downloadPage": "[URL]", "documentation": "[To be filled]"},
+  "conformanceOverview": {"evaluatedAgainst": {}, "conformanceLevel": "[To be filled]", "conformanceSummary": "[To be filled]", "accessibilityHazards": "[To be filled]"},
+  "testingMethodology": {"methodology": "[To be filled]", "testingApproaches": ["[To be filled]"], "testedScenarios": []},
+  "lastUpdated": "[YYYY-MM-DD]",
+  "uaag": [],
+  "wcag": [],
+  "epub": [],
+  "daisyURS": [],
+  "requirements": []
+}

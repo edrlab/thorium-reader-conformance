@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title }} - Thorium Reader Conformance Reports</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" href="https://www.edrlab.org/wp-content/uploads/2018/10/Miniature_blue.png" />
+</head>
+<body typeof="Book" vocab="https://schema.org">
+  <header class="sticky">
+  <section class="hero">
+    <img src="https://www.edrlab.org/wp-content/uploads/2018/10/Miniature_blue.png" alt="EDRLab" class="header-icon" />
+    <h1>Thorium Reader Conformance Reports</h1>
+    <p class="subtitle">Conformance Assessment for Thorium Reader</p>
+  </section>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/documents/desktop4/">Desktop 4</a></li>
+        <li><a href="/documents/desktop3/">Desktop 3</a></li>
+        <li><a href="/documents/ios/">iOS</a> <small>(Coming Soon)</small></li>
+        <li><a href="/documents/android/">Android</a> <small>(Coming Soon)</small></li>
+        <li><a href="/documents/web/">Web</a> <small>(Coming Soon)</small></li>
+        <li><a href="/documents/glossary/">Glossary</a></li>
+        <li><a href="/documents/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}
+    {{ content | safe }}
+    {% endblock %}
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://edrlab.org">
+        <img src="https://www.edrlab.org/wp-content/uploads/2016/12/edrlab_logo@2x.jpg" alt="EDRLab" width="20px" />
+      </a>
+      Thorium Reader Conformance Reports - Generated with <a href="https://www.11ty.dev/">11ty</a>
+    </p>
+    <p>
+      <a href="https://www.edrlab.org/">The European Digital Reading Lab (EDRLab)</a> is an international non-profit 
+      membership association dedicated to an open, interoperable and accessible digital publishing ecosystem worldwide.
+    </p>
+    <p>
+      <a href="/accessibility-statement/">Accessibility of this website</a>
+    </p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+          crossorigin="anonymous"></script>
+  <script type="text/javascript" 
+          src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" 
+          src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
+  <script type="text/javascript" 
+          src="https://smart.daisy.org/js/config/messages.js?v=2024-05-31T12:00:00Z"></script>
+  <script type="text/javascript" 
+          src="https://smart.daisy.org/js/init-datatables.js?v=2024-05-31T12:00:00Z"></script>
+  <script src="https://smart.daisy.org/js/a11ytabs.js?v=2024-05-31T12:00:00Z"></script>
+</body>
+</html>
