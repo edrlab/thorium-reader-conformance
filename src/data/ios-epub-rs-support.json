@@ -1,0 +1,26 @@
+{
+  "productName": "Thorium Reader iOS",
+  "version": "[VERSION]",
+  "platform": "iOS",
+  "description": "[Product description - to be filled]",
+  "reportDate": "[YYYY-MM-DD]",
+  "evaluationDate": "[YYYY-MM-DD]",
+  "evaluationMethodology": "[Evaluation methodology - to be filled]",
+  "conformanceLevel": "[Conformance levels - to be filled]",
+  "conformanceSummary": "[Summary - to be filled]",
+  "accessibilityHazards": "none",
+  "keyFindings": {
+    "strengths": ["[To be filled]"],
+    "limitations": ["[To be filled]"]
+  },
+  "testingEnvironments": ["[To be filled]"],
+  "changelog": [{"date": "[YYYY-MM-DD]", "description": "[To be filled]"}],
+  "rulesets": {
+    "epubRS": {"name": "EPUB RS", "title": "EPUB Reading System", "version": "3.4", "url": "https://www.w3.org/TR/epub-rs-34/", "referenceUrl": "https://www.w3.org/TR/epub-rs-34/"}
+  },
+  "productInfo": {"name": "Thorium Reader iOS", "version": "[VERSION]", "platform": "iOS", "description": "[To be filled]", "downloadPage": "[URL]", "documentation": "[To be filled]"},
+  "conformanceOverview": {"evaluatedAgainst": {}, "conformanceLevel": "[To be filled]", "conformanceSummary": "[To be filled]"},
+  "testingMethodology": {"methodology": "[To be filled]", "testingApproaches": ["[To be filled]"], "testedScenarios": []},
+  "lastUpdated": "[YYYY-MM-DD]",
+  "testResults": []
+}

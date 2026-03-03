@@ -1,0 +1,179 @@
+{% extends "./base.njk" %}
+
+{% block content %}
+<div class="conformance-report">
+  <section id="about-report">
+    <h2>About This Report</h2>
+    
+    {% set platformData = reportedPlatform if reportedPlatform else 'desktop' %}
+    {% set platformConformanceData = conformance[platformData] if conformance and conformance[platformData] else {} %}
+
+      <dl>
+        <dt>Product Name:</dt>
+        <dd>{{ platformConformanceData.productName or productName }}</dd>
+        <dt>Version:</dt>
+        <dd>{{ platformConformanceData.version or version }}</dd>
+        <dt>Platform:</dt>
+        <dd>{{ platformConformanceData.platform or platform }}</dd>
+        <dt>Report Date:</dt>
+        <dd>{{ platformConformanceData.reportDate or reportDate }}</dd>
+        <dt>Evaluation Date:</dt>
+        <dd>{{ platformConformanceData.evaluationDate or evaluationDate }}</dd>
+      </dl>
+
+
+    <details>
+      <summary>Changelog
+      </summary>
+      {% if platformConformanceData.changelog %}
+        <ul>
+        {% for entry in platformConformanceData.changelog %}
+          <li><strong>{{ entry.date }}:</strong> {{ entry.description }}</li>
+        {% endfor %}
+        </ul>
+      {% elif changelog %}
+        <ul>
+        {% for entry in changelog %}
+          <li><strong>{{ entry.date }}:</strong> {{ entry.description }}</li>
+        {% endfor %}
+        </ul>
+      {% else %}
+        <p>No changelog available yet.</p>
+      {% endif %}
+    </details>
+
+    <details>
+      <summary>
+        <h3 class="inline">Evaluation Methodology</h3>
+      </summary>
+      {% set methodologyData = platformConformanceData.testingMethodology or testingMethodology %}
+      {% if methodologyData %}
+        {% if methodologyData.methodology %}
+          <p><strong>{{ methodologyData.methodology }}</strong></p>
+        {% endif %}
+        
+        {% if methodologyData.testingApproaches %}
+          <h4>Testing Approaches</h4>
+          <ul>
+          {% for approach in methodologyData.testingApproaches %}
+            <li>{{ approach }}</li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+        
+        {% if methodologyData.testedScenarios %}
+          <h4>Tested Scenarios</h4>
+          <ul>
+          {% for scenario in methodologyData.testedScenarios %}
+            <li>
+              <strong>{{ scenario.date }}:</strong> 
+              {% if scenario.url %}
+                <a href="{{ scenario.url }}" target="_blank">{{ scenario.scenario }}</a>
+              {% else %}
+                {{ scenario.scenario }}
+              {% endif %}
+            </li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+      {% else %}
+        <p>No testing methodology information available.</p>
+      {% endif %}
+
+        <h3 class="inline">Standards & References</h3>
+
+      {% if platformConformanceData.rulesets %}
+        <dl>
+        {% for key, ruleset in platformConformanceData.rulesets %}
+          <dt>{{ ruleset.title }} ({{ ruleset.name }})</dt>
+          <dd>
+            Version: {{ ruleset.version }} - Reference: <a href="{{ ruleset.referenceUrl }}" target="_blank">{{ ruleset.referenceUrl }}</a>
+          </dd>
+        {% endfor %}
+        </dl>
+      {% endif %}
+    </details>
+  </section>
+
+  <hr />
+
+  <section id="conformance" class="js-tabs">
+    <h2>Detailed Reports</h2>
+
+    {% set standardsToShow = standards if standards else ['wcag', 'uaag', 'epub', 'daisyURS'] %}
+
+    {% for standard in standardsToShow %}
+      {% set standardData = platformConformanceData[standard] if platformConformanceData else [] %}
+      
+      {% if standardData and standardData.length > 0 %}
+      <div class="report-section">
+      <details>
+      <summary>
+        <h3 class="inline">{{ standard | upper }} Conformance Results</h3>
+        </summary>
+        <table class="responsive" id="{{ standard }}-results">
+          <thead>
+            <tr>
+              <th data-priority="1">Success Criteria</th>
+              <th>Level</th>
+              <th data-priority="2">Result</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for item in standardData | sortByNumber('number') %}
+            <tr>
+              <td>
+                <details>
+                  <summary class="sc-title">
+                    <a id="sc_{{ standard }}_{{ item.id }}" name="sc_{{ standard }}_{{ item.id }}"></a>
+                    {{ item.number }} {{ item.title }}
+                  </summary>
+                  <p class="sc-text">{{ item.description | safe }}</p>
+                  <p class="issue"><a href="{{ item.url | safe }}" target="_blank">{{ item.title }}</a></p>
+
+                </details>
+              </td>
+              <td class="lvl">{{ item.level }}</td>
+              <td class="result {{ item.result | lower }}">
+                <p class="label">{{ item.result }}</p>
+              </td>
+              <td>                
+              {% if item.notes %}
+                <p class="notes">{{ item.notes }}</p>
+              {% endif %}
+              {% if item.additionalInfo %}
+                 <p class="notes">{{ item.additionalInfo }}</p>
+              {% endif %}
+              {% if item.issue and item.issuelabel %}
+                <p class="issue"><a href="{{ item.issue | safe }}" target="_blank">{{ item.issuelabel }}</a></p>
+              {% elif item.issue %}
+                <p class="issue"><a href="{{ item.issue | safe }}" target="_blank">{{ item.issue }}</a></p>
+              {% endif %}
+                </td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+             </details>
+      </div>
+      {% endif %}
+    {% endfor %}
+
+  </section>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize DataTables if available
+    if (typeof jQuery !== 'undefined' && jQuery.fn.dataTable) {
+      jQuery('table.responsive').dataTable({
+        paging: false,
+        info: false,
+        responsive: true
+      });
+    }
+  });
+</script>
+
+{% endblock %}

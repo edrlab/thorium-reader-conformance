@@ -1,0 +1,42 @@
+{
+  "siteName": "Thorium Reader Conformance Reports",
+  "siteUrl": "https://thorium-conformance.edrlab.org",
+  "description": "Accessibility Conformance Reports for Thorium Reader",
+  "author": "EDRLab",
+  "platforms": {
+    "desktop3": {
+      "name": "Thorium Reader Desktop 3.x",
+      "status": "active",
+      "description": "Thorium Reader Desktop version 3 series",
+      "technicalSpec": "/documents/desktop3/technical-spec/",
+      "termsOfUse": "/documents/desktop3/terms-of-use/",
+      "privacyPolicy": "/documents/desktop3/privacy-policy/"
+    },
+    "desktop4": {
+      "name": "Thorium Reader Desktop 4.x",
+      "status": "active",
+      "description": "Thorium Reader Desktop version 4 series",
+      "technicalSpec": "/documents/desktop4/technical-spec/",
+      "termsOfUse": "/documents/desktop4/terms-of-use/",
+      "privacyPolicy": "/documents/desktop4/privacy-policy/"
+    },
+    "web": {
+      "name": "Thorium Reader Web",
+      "status": "beta",
+      "description": "Web-based version for browser access",
+      "info":"https://github.com/edrlab/thorium-web"
+    },
+    "ios": {
+      "name": "Thorium Reader iOS",
+      "status": "beta",
+      "description": "Mobile version for iOS",
+      "info":"https://edrlab.notion.site/thorium-mobile-beta"
+
+    },
+    "android": {
+      "name": "Thorium Reader Android",
+      "status": "coming-soon",
+      "description": "Mobile version for Android"
+    }
+  }
+}

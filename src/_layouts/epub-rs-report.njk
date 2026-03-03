@@ -1,0 +1,219 @@
+{% extends "./base.njk" %}
+
+{% block content %}
+<div class="conformance-report">
+  <section id="about-report">
+    <h2>About This Report</h2>
+    
+    {% set epubRSData = epub_rs %}
+
+      <dl>
+        <dt>Product Name:</dt>
+        <dd>{{ epubRSData.productName }}</dd>
+        <dt>Version:</dt>
+        <dd>{{ epubRSData.version }}</dd>
+        <dt>Platform:</dt>
+        <dd>{{ epubRSData.platform }}</dd>
+        <dt>Report Date:</dt>
+        <dd>{{ epubRSData.reportDate }}</dd>
+        <dt>Evaluation Date:</dt>
+        <dd>{{ epubRSData.evaluationDate }}</dd>
+      </dl>
+
+    <details>
+      <summary>Description</summary>
+      <p>{{ epubRSData.description }}</p>
+      <p>{{ epubRSData.conformanceSummary }}</p>
+    </details>
+
+    <details>
+      <summary>Key Findings</summary>
+      
+      {% if epubRSData.keyFindings %}
+        {% if epubRSData.keyFindings.strengths %}
+        <h4>Strengths</h4>
+        <ul>
+        {% for item in epubRSData.keyFindings.strengths %}
+          <li>{{ item }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if epubRSData.keyFindings.limitations %}
+        <h4>Limitations</h4>
+        <ul>
+        {% for item in epubRSData.keyFindings.limitations %}
+          <li>{{ item }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+      {% endif %}
+    </details>
+
+    <details>
+      <summary>Changelog</summary>
+      {% if epubRSData.changelog %}
+        <ul>
+        {% for entry in epubRSData.changelog %}
+          <li><strong>{{ entry.date }}:</strong> {{ entry.description }}</li>
+        {% endfor %}
+        </ul>
+      {% else %}
+        <p>No changelog available yet.</p>
+      {% endif %}
+    </details>
+
+    <details>
+      <summary>
+        <h3 class="inline">Evaluation Methodology</h3>
+      </summary>
+      {% if epubRSData.evaluationMethodology %}
+        <p>{{ epubRSData.evaluationMethodology }}</p>
+      {% endif %}
+
+      {% if epubRSData.testingEnvironments %}
+        <h4>Testing Environments</h4>
+        <ul>
+        {% for env in epubRSData.testingEnvironments %}
+          <li>{{ env }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+
+      <h4>Standards & References</h4>
+      {% if epubRSData.rulesets %}
+        <dl>
+        {% for key, ruleset in epubRSData.rulesets %}
+          <dt>{{ ruleset.title }} ({{ ruleset.name }})</dt>
+          <dd>
+            Version: {{ ruleset.version }} - Reference: <a href="{{ ruleset.referenceUrl }}" target="_blank">{{ ruleset.referenceUrl }}</a>
+          </dd>
+        {% endfor %}
+        </dl>
+      {% endif %}
+    </details>
+  </section>
+
+  <hr />
+
+  <section id="conformance" class="js-tabs">
+    <h2>Detailed Assessment Results</h2>
+
+    <!-- EPUB RS 3.3 Assessment -->
+    {% set epubRS33Data = epub_rs_33 %}
+    {% if epubRS33Data.epubRS and epubRS33Data.epubRS.length > 0 %}
+    <div class="report-section">
+    <details>
+    <summary>
+      <h3 class="inline">EPUB Reading System 3.3 Assessment (Test Results)</h3>
+      </summary>
+      <p><strong>Evaluation Basis:</strong> W3C EPUB 3.3 Test Results from <a href="https://w3c.github.io/epub-tests/epub33/results" target="_blank">https://w3c.github.io/epub-tests/epub33/results</a></p>
+      <table class="responsive" id="epub-rs-33-results">
+        <thead>
+          <tr>
+            <th data-priority="1">Test Case</th>
+            <th>Category</th>
+            <th>Level</th>
+            <th data-priority="2">Result</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for item in epubRS33Data.epubRS %}
+          <tr>
+            <td>
+              <details>
+                <summary class="sc-title">
+                  <a id="sc_epubrs33_{{ item.id }}" name="sc_epubrs33_{{ item.id }}"></a>
+                  {{ item.testId }}: {{ item.title }}
+                </summary>
+                <p class="sc-text">{{ item.description | safe }}</p>
+                {% if item.url %}
+                <p class="issue"><a href="{{ item.url | safe }}" target="_blank">View Test Details</a></p>
+                {% endif %}
+              </details>
+            </td>
+            <td>{{ item.category }}</td>
+            <td class="lvl">{{ item.level }}</td>
+            <td class="result {{ item.result | lower }}">
+              <p class="label">{{ item.result }}</p>
+            </td>
+            <td>                
+            {% if item.notes %}
+              <p class="notes">{{ item.notes }}</p>
+            {% endif %}
+              </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </details>
+    </div>
+    {% endif %}
+
+    <!-- EPUB RS 3.4 Assessment -->
+    {% if epubRSData.epubRS and epubRSData.epubRS.length > 0 %}
+    <div class="report-section">
+    <details>
+    <summary>
+      <h3 class="inline">EPUB Reading System 3.4 Assessment (Specification)</h3>
+      </summary>
+      <p><strong>Evaluation Basis:</strong> W3C EPUB Reading System 3.4 Specification</p>
+      <table class="responsive" id="epub-rs-results">
+        <thead>
+          <tr>
+            <th data-priority="1">Requirement</th>
+            <th>Level</th>
+            <th data-priority="2">Result</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for item in epubRSData.epubRS %}
+          <tr>
+            <td>
+              <details>
+                <summary class="sc-title">
+                  <a id="sc_epubrs_{{ item.id }}" name="sc_epubrs_{{ item.id }}"></a>
+                  {{ item.number }} {{ item.title }}
+                </summary>
+                <p class="sc-text">{{ item.description | safe }}</p>
+                {% if item.url %}
+                <p class="issue"><a href="{{ item.url | safe }}" target="_blank">View Specification</a></p>
+                {% endif %}
+              </details>
+            </td>
+            <td class="lvl">{{ item.level }}</td>
+            <td class="result {{ item.result | lower }}">
+              <p class="label">{{ item.result }}</p>
+            </td>
+            <td>                
+            {% if item.notes %}
+              <p class="notes">{{ item.notes }}</p>
+            {% endif %}
+              </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+           </details>
+    </div>
+    {% endif %}
+
+  </section>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize DataTables if available
+    if (typeof jQuery !== 'undefined' && jQuery.fn.dataTable) {
+      jQuery('table.responsive').dataTable({
+        paging: false,
+        info: false,
+        responsive: true
+      });
+    }
+  });
+</script>
+
+{% endblock %}
