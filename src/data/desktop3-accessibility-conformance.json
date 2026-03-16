@@ -143,494 +143,854 @@
   "lastUpdated": "2026-02-27",
   "uaag": [
     {
-      "id": "1101",
-      "number": "1.10.1",
-      "title": "Show Related Elements",
-      "level": "AA",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can access information from explicitly-defined relationships in content, including image names, control names, table captions, and table cell labels.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_1101"
-    },
-    {
-      "id": "1102",
-      "number": "1.10.2",
-      "title": "Show Element Hierarchy",
-      "level": "AAA",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can determine the path of element nodes from the root element to the currently focused or selected element.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_1102"
-    },
-    {
-      "id": "1110",
+      "id": "0111",
       "number": "1.1.1",
       "title": "Render Alternative Content",
-      "level": "A",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can choose to render any type of recognized alternative content that is present for a content element.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_111"
+      "level": "unknown",
+      "result": "unknown"
     },
     {
-      "id": "1130",
+      "id": "0112",
+      "number": "1.1.2",
+      "title": "Indicate Unrendered Alternative Content",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0113",
       "number": "1.1.3",
       "title": "Replace Non-Text Content",
-      "level": "A",
-      "result": "failed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can request a placeholder that incorporates recognized text alternative content instead of recognized non-text content, until explicit user request to render the non-text content.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_113"
+      "level": "unknown",
+      "result": "unknown"
     },
     {
-      "id": "1300",
-      "number": "1.3",
-      "title": "Provide highlighting for selection, keyboard focus, enabled elements, visited links Guideline",
+      "id": "0114",
+      "number": "1.1.4",
+      "title": "Facilitate Clear Display of Alternative Content for Time-based Media",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0115",
+      "number": "1.1.5",
+      "title": "Provide Configurable Alternative Content Defaults",
+      "level": "AA",
+      "result": "failed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0116",
+      "number": "1.1.6",
+      "title": "Use Configurable Text for Time-based Media Captions",
       "level": "AA",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_13"
+      "notes": "Additional Info:"
     },
     {
-      "id": "1310",
+      "id": "0117",
+      "number": "1.1.7",
+      "title": "Allow Resize and Reposition of Time-based Media Alternatives",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0121",
+      "number": "1.2.1",
+      "title": "Support Repair by Assistive Technologies",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0131",
       "number": "1.3.1",
       "title": "Distinguishable Highlighting",
-      "level": "A",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can have selection, search results, active keyboard focus, unvisited links, and visited links uniquely highlighted, overriding any values specified by the author.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_131"
+      "level": "unknown",
+      "result": "unknown"
     },
     {
-      "id": "1320",
+      "id": "0132",
       "number": "1.3.2",
       "title": "Highlighting Options",
       "level": "AA",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can set foreground color and background color characteristics of selection highlighting, overriding any values specified by the author.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_132"
+      "notes": "Additional Info:"
     },
     {
-      "id": "1410",
-      "number": "1.4.1",
-      "title": "Basic Text Formatting (Globally)",
-      "level": "A",
+      "id": "0133",
+      "number": "1.3.3",
+      "title": "Highlighting Active Keyboard Focus",
+      "level": "AA",
       "result": "passed",
-      "notes": "Caption Clean view is available for TTS reading. It should be extended to visual reading (see Issue  #3141 Extend Caption / Clean View to visual reading (UAAG1.1.3 Replace Non-Text Content))",
-      "issue": "",
-      "description": "The user can globally set text scale, color, font family, line spacing, and text style (underline, italic, bold).",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_141"
+      "notes": "Additional Info:"
     },
     {
-      "id": "1410",
-      "number": "1.4.1",
-      "title": "Basic Text Formatting (Globally)",
-      "level": "A",
+      "id": "0134",
+      "number": "1.3.4",
+      "title": "Distinguishing Enabled Elements",
+      "level": "AA",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can globally set text scale, color, font family, line spacing, and text style (underline, italic, bold).",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_141"
+      "notes": "Additional Info:"
     },
     {
-      "id": "1410",
+      "id": "0135",
+      "number": "1.3.5",
+      "title": "Distinguishing Enabled Elements",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0141",
       "number": "1.4.1",
-      "title": "Basic Text Formatting (Globally)",
-      "level": "A",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can globally set text scale, color, font family, line spacing, and text style (underline, italic, bold).",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_141"
+      "title": "Basic text formatting (Globally)",
+      "level": "unknown",
+      "result": "unknown"
     },
     {
-      "id": "1420",
+      "id": "0142",
       "number": "1.4.2",
-      "title": "Basic Text Formatting (by Element)",
-      "level": "AA",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can set text characteristics for specific element types including at least headings, input fields, and links (size, color, font, line spacing, style, margins, borders).",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_142"
+      "title": "Basic text formatting (by Element)",
+      "level": "unknown",
+      "result": "unknown"
     },
     {
-      "id": "1440",
+      "id": "0143",
+      "number": "1.4.3",
+      "title": "Blocks of text (Globally)",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0144",
       "number": "1.4.4",
       "title": "Configured and Reflowed Text Printing",
-      "level": "AA",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can print rendered content with user's text configuration settings applied, and can choose to have content printed as rendered on screen or reflowed.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_144"
+      "level": "unknown",
+      "result": "unknown"
     },
     {
-      "id": "1440",
-      "number": "1.4.4",
-      "title": "Configured and Reflowed Text Printing",
-      "level": "AA",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can print rendered content with user's text configuration settings applied, and can choose to have content printed as rendered on screen or reflowed.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_144"
+      "id": "0145",
+      "number": "1.4.5",
+      "title": "Default to platform text settings",
+      "level": "unknown",
+      "result": "unknown"
     },
     {
-      "id": "1440",
-      "number": "1.4.4",
-      "title": "Configured and Reflowed Text Printing",
-      "level": "AA",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can print rendered content with user's text configuration settings applied, and can choose to have content printed as rendered on screen or reflowed.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_144"
+      "id": "0146",
+      "number": "1.4.6",
+      "title": "Advanced text formatting",
+      "level": "unknown",
+      "result": "unknown"
     },
     {
-      "id": "1700",
-      "number": "1.7",
-      "title": "Enable Configuration of User Stylesheets Success Criteria",
+      "id": "0151",
+      "number": "1.5.1",
+      "title": "Global Volume",
       "level": "A",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_17"
+      "notes": "Additional Info:"
     },
     {
-      "id": "1700",
-      "number": "1.7",
-      "title": "Enable Configuration of User Stylesheets Success Criteria",
+      "id": "0161",
+      "number": "1.6.1",
+      "title": "Speech Rate, Volume, and Voice",
       "level": "AA",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_17"
+      "notes": "Additional Info:"
     },
     {
-      "id": "1700",
-      "number": "1.7",
-      "title": "Enable Configuration of User Stylesheets Success Criteria",
+      "id": "0162",
+      "number": "1.6.2",
+      "title": "Speech Pitch and Range",
       "level": "AA",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_17"
+      "notes": "Additional Info:"
     },
     {
-      "id": "1700",
-      "number": "1.7",
-      "title": "Enable Configuration of User Stylesheets PRINCIPLE 2. Ensure that the user interface is operable Note",
+      "id": "0163",
+      "number": "1.6.3",
+      "title": "Synthesized Speech Features",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0164",
+      "number": "1.6.4",
+      "title": "Synthesized Speech Language",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0165",
+      "number": "1.6.5",
+      "title": "Advanced Speech Characteristics",
       "level": "AAA",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_17"
+      "notes": "Additional Info:"
     },
     {
-      "id": "1810",
+      "id": "0171",
+      "number": "1.7.1",
+      "title": "Disable Author Stylesheets",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0172",
+      "number": "1.7.2",
+      "title": "Support User Stylesheet or User Style Modification Mechanism",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0173",
+      "number": "1.7.3",
+      "title": "Apply User Stylesheets",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0174",
+      "number": "1.7.4",
+      "title": "Save Copies of Stylesheets",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0181",
       "number": "1.8.1",
       "title": "Highlight Viewport",
       "level": "A",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can have the viewport with the input focus be highlighted.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_181"
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0182",
+      "number": "1.8.2",
+      "title": "Move Viewport to Selection and Focus",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0183",
+      "number": "1.8.3",
+      "title": "Provide Viewport Scrollbars",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0184",
+      "number": "1.8.4",
+      "title": "Indicate Viewport Position",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0185",
+      "number": "1.8.5",
+      "title": "Allow Zoom",
+      "level": "A",
+      "result": "failed"
+    },
+    {
+      "id": "0186",
+      "number": "1.8.6",
+      "title": "Maintain Point of Regard",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0187",
+      "number": "1.8.7",
+      "title": "Customize Viewport Highlighting",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0188",
+      "number": "1.8.8",
+      "title": "Allow Viewport Resize",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0189",
+      "number": "1.8.9",
+      "title": "Provide Viewport History",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "1810",
+      "number": "1.8.10",
+      "title": "Allow Top-Level Viewport Open on Request",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
     },
     {
       "id": "1811",
       "number": "1.8.11",
       "title": "Allow Top-Level Viewport Focus Control",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "1812",
+      "number": "1.8.12",
+      "title": "Allow Same User Interface",
       "level": "AA",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "If new top-level viewports are configured to open without explicit user request, the user can specify whether or not they take active keyboard focus.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_1811"
+      "notes": "Additional Info:"
     },
     {
-      "id": "1820",
-      "number": "1.8.2",
-      "title": "Move Viewport to Selection and Focus",
-      "level": "A",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "When a viewport's selection or input focus changes, the viewport's content moves to ensure the new location is at least partially visible.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_182"
-    },
-    {
-      "id": "1860",
-      "number": "1.8.6",
-      "title": "Maintain Point of Regard",
-      "level": "A",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The point of regard remains visible within the viewport when the viewport is resized, when content is zoomed or scaled, or when content formatting is changed.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_186"
-    },
-    {
-      "id": "1870",
-      "number": "1.8.7",
-      "title": "Customize Viewport Highlighting",
+      "id": "1813",
+      "number": "1.8.13",
+      "title": "Multi-Column Text Reflow",
       "level": "AA",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "When highlighting viewports, the user can customize attributes of the viewport highlighting mechanism such as color and width of borders.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_187"
+      "notes": "Additional Info:"
     },
     {
-      "id": "1890",
-      "number": "1.8.9",
-      "title": "Provide Viewport History",
+      "id": "1814",
+      "number": "1.8.14",
+      "title": "Ignore Fixed Unit Dimensions",
       "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "1815",
+      "number": "1.8.15",
+      "title": "Linearize Content",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "1816",
+      "number": "1.8.16",
+      "title": "Provide Web Page Bookmarks",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0191",
+      "number": "1.9.1",
+      "title": "Outline View",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0192",
+      "number": "1.9.2",
+      "title": "Source View",
+      "level": "AAA",
       "result": "failed",
-      "notes": "Reflowable contents can be adjusted in size and fixed layout contents can be zoomed. However the text from the interface cannot be resized. This is tracked in Issue Make the interface scalable",
-      "issue": "",
-      "description": "For user agents that implement a history mechanism, the user can return to any state in viewport history including restored point of regard, input focus, and form field entries.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_189"
+      "notes": "Additional Info: Source view is available only with development versions,\n\t\t\t\t\t\t\twithout LCP protection support."
     },
     {
-      "id": "1890",
-      "number": "1.8.9",
-      "title": "Provide Viewport History",
+      "id": "1101",
+      "number": "1.10.1",
+      "title": "Show Related Elements",
       "level": "AA",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "For user agents that implement a history mechanism, the user can return to any state in viewport history including restored point of regard, input focus, and form field entries.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_189"
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "1102",
+      "number": "1.10.2",
+      "title": "Show Element Hierarchy",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0211",
+      "number": "2.1.1",
+      "title": "Provide Full Keyboard Functionality",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0212",
+      "number": "2.1.2",
+      "title": "Has Keyboard Focus",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0213",
+      "number": "2.1.3",
+      "title": "Avoid Keyboard Traps",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0214",
+      "number": "2.1.4",
+      "title": "Separate Selection from Activation",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0215",
+      "number": "2.1.5",
+      "title": "Follow Text Keyboard Conventions",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0216",
+      "number": "2.1.6",
+      "title": "Make Keyboard Access Efficient",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0221",
+      "number": "2.2.1",
+      "title": "Sequential Navigation Between Elements",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0222",
+      "number": "2.2.2",
+      "title": "Sequential Navigation Between Landmarks",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0223",
+      "number": "2.2.3",
+      "title": "Default Navigation Order",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0224",
+      "number": "2.2.4",
+      "title": "Options for Wrapping in Navigation",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0231",
+      "number": "2.3.1",
+      "title": "Allow Direct Navigation to Enabled Elements",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0232",
+      "number": "2.3.2",
+      "title": "Allow Direct Activation of Enabled Elements",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0233",
+      "number": "2.3.3",
+      "title": "Present Direct Commands from Rendered Content",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0234",
+      "number": "2.3.4",
+      "title": "Present Direct Commands in User Interface",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0235",
+      "number": "2.3.5",
+      "title": "Allow Customized Keyboard Commands",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0241",
+      "number": "2.4.1",
+      "title": "Text Search",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0242",
+      "number": "2.4.2",
+      "title": "Search Direction",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0243",
+      "number": "2.4.3",
+      "title": "Match Found",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0244",
+      "number": "2.4.4",
+      "title": "Alert on Wrap or No Match",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0245",
+      "number": "2.4.5",
+      "title": "Alternative Content Search",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0251",
+      "number": "2.5.1",
+      "title": "Provide Structural Navigation by Heading and within Tables",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0261",
+      "number": "2.6.1",
+      "title": "Allow Persistent Accessibility Settings",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0262",
+      "number": "2.6.2",
+      "title": "Allow Restore All to Default",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0263",
+      "number": "2.6.3",
+      "title": "Allow Multiple Sets of Preference Settings",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0264",
+      "number": "2.6.4",
+      "title": "Allow Preference Changes from outside the User Interface",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0265",
+      "number": "2.6.5",
+      "title": "Make Preference Settings Transferable",
+      "level": "AAA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0271",
+      "number": "2.7.1",
+      "title": "Customize Display of Controls for User Interface Commands, Functions, and Add-ons",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0281",
+      "number": "2.8.1",
+      "title": "Adjustable Time Limits",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0291",
+      "number": "2.9.1",
+      "title": "Three Flashes or Below Threshold",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0292",
+      "number": "2.9.2",
+      "title": "Three Flashes",
+      "level": "AAA",
+      "result": "passed",
+      "notes": "Additional Info:"
     },
     {
       "id": "2101",
       "number": "2.10.1",
       "title": "Time-Based Media Load-Only",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "2102",
+      "number": "2.10.2",
+      "title": "Execution Placeholder",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "2103",
+      "number": "2.10.3",
+      "title": "Execution Toggle",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "2104",
+      "number": "2.10.4",
+      "title": "Adjustable Playback Rate for Prerecorded Content",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "2105",
+      "number": "2.10.5",
+      "title": "Stop/Pause/Resume Time-Based Media",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "2106",
+      "number": "2.10.6",
+      "title": "Navigation of Time-Based Media by Time",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "2107",
+      "number": "2.10.7",
+      "title": "Navigation of Time-Based Media by Semantics",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "2108",
+      "number": "2.10.8",
+      "title": "Video Contrast and Brightness",
       "level": "AAA",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can override the play on load of recognized time-based media content.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_2101"
+      "notes": "Additional Info:"
     },
     {
-      "id": "2110",
-      "number": "2.1.1",
-      "title": "Provide Full Keyboard Functionality",
+      "id": "2111",
+      "number": "2.11.1",
+      "title": "Text Input With Any Device",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0311",
+      "number": "3.1.1",
+      "title": "Text Entry Undo",
       "level": "A",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "All functionality can be operated via keyboard without specific timings for individual keystrokes, except where the function requires input that depends on the path of movement.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_211"
+      "notes": "Additional Info:"
     },
     {
-      "id": "2130",
-      "number": "2.1.3",
-      "title": "Avoid Keyboard Traps",
-      "level": "A",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "If keyboard focus can be moved to a component, focus can be moved away using only a keyboard interface, or users are advised of the exit method.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_213"
-    },
-    {
-      "id": "2150",
-      "number": "2.1.5",
-      "title": "Follow Text Keyboard Conventions",
-      "level": "A",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user agent follows keyboard conventions for the operating environment.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_215"
-    },
-    {
-      "id": "2210",
-      "number": "2.2.1",
-      "title": "Sequential Navigation Between Elements",
-      "level": "A",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can move keyboard focus backwards and forwards through all recognized enabled elements in the rendered content.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_221"
-    },
-    {
-      "id": "2210",
-      "number": "2.2.1",
-      "title": "Sequential Navigation Between Elements",
-      "level": "A",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can move keyboard focus backwards and forwards through all recognized enabled elements in the rendered content.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_221"
-    },
-    {
-      "id": "2310",
-      "number": "2.3.1",
-      "title": "Allow Direct Navigation to Enabled Elements",
-      "level": "AA",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can move keyboard focus directly to any enabled element in the rendered content.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_231"
-    },
-    {
-      "id": "2630",
-      "number": "2.6.3",
-      "title": "Allow Multiple Sets of Preference Settings",
-      "level": "AA",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can save and retrieve multiple sets of user agent preference settings.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_263"
-    },
-    {
-      "id": "3120",
+      "id": "0312",
       "number": "3.1.2",
       "title": "Settings Changes can be Reversed or Confirmed",
       "level": "A",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "If the user agent provides mechanisms for changing settings, it allows the user to reverse changes or requires confirmation.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_312"
+      "notes": "Additional Info:"
     },
     {
-      "id": "3250",
+      "id": "0313",
+      "number": "3.1.3",
+      "title": "Retrieval Progress",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0314",
+      "number": "3.1.4",
+      "title": "Spell Check",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0315",
+      "number": "3.1.5",
+      "title": "Back Button",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0316",
+      "number": "3.1.6",
+      "title": "Form Submission Confirm",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0317",
+      "number": "3.1.7",
+      "title": "Form Auto-Fill",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0318",
+      "number": "3.1.8",
+      "title": "Save Form Entries",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0321",
+      "number": "3.2.1",
+      "title": "Accessible Documentation",
+      "level": "A",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0322",
+      "number": "3.2.2",
+      "title": "Describe Accessibility Features",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0323",
+      "number": "3.2.3",
+      "title": "Document All Features",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0324",
+      "number": "3.2.4",
+      "title": "Changes Between Versions",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0325",
       "number": "3.2.5",
       "title": "Centralized View",
       "level": "AAA",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "There is a dedicated section of documentation presenting all features necessary to meet UAAG 2.0 requirements.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_325"
+      "notes": "Additional Info:"
     },
     {
-      "id": "3310",
+      "id": "0331",
       "number": "3.3.1",
       "title": "Avoid Unpredictable Focus",
-      "level": "A",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user can prevent focus changes that are not a result of explicit user request.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_331"
+      "level": "unknown",
+      "result": "unknown"
     },
     {
-      "id": "4120",
+      "id": "0411",
+      "number": "4.1.1",
+      "title": "Support Platform Accessibility Services",
+      "level": "unknown",
+      "result": "unknown"
+    },
+    {
+      "id": "0412",
       "number": "4.1.2",
       "title": "Expose Accessible Properties",
-      "level": "A",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user agent makes available via platform accessibility services: name, role, state, value, selection, focus, bounding dimensions, font, colors, and keyboard commands.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_412"
+      "level": "unknown",
+      "result": "unknown"
     },
     {
-      "id": "4120",
-      "number": "4.1.2",
-      "title": "Expose Accessible Properties",
+      "id": "0413",
+      "number": "4.1.3",
+      "title": "Provide Equivalent Accessible Alternatives",
       "level": "A",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user agent makes available via platform accessibility services: name, role, state, value, selection, focus, bounding dimensions, font, colors, and keyboard commands.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_412"
+      "notes": "Additional Info:"
     },
     {
-      "id": "4120",
-      "number": "4.1.2",
-      "title": "Expose Accessible Properties",
+      "id": "0414",
+      "number": "4.1.4",
+      "title": "DOMs Programmatically Available as fallback",
+      "level": "A",
+      "result": "passed"
+    },
+    {
+      "id": "0415",
+      "number": "4.1.5",
+      "title": "Make Content Interaction Programmatically Available",
       "level": "A",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user agent makes available via platform accessibility services: name, role, state, value, selection, focus, bounding dimensions, font, colors, and keyboard commands.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_412"
+      "notes": "Additional Info:"
     },
     {
-      "id": "4120",
-      "number": "4.1.2",
-      "title": "Expose Accessible Properties",
+      "id": "0511",
+      "number": "5.1.1",
+      "title": "Comply with WCAG",
+      "level": "AA",
+      "result": "passed",
+      "notes": "Additional Info:"
+    },
+    {
+      "id": "0512",
+      "number": "5.1.2",
+      "title": "Implement Accessibility Features of Web Content Technology Specifications",
       "level": "A",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "The user agent makes available via platform accessibility services: name, role, state, value, selection, focus, bounding dimensions, font, colors, and keyboard commands.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_412"
+      "notes": "Additional Info:"
     },
     {
-      "id": "5130",
+      "id": "0513",
       "number": "5.1.3",
       "title": "Implement Accessibility Features of the Platform",
-      "level": "A",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "If the user agent contains native interfaces, those native interfaces follow platform accessibility guidelines.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_513"
+      "level": "unknown",
+      "result": "unknown"
     },
     {
-      "id": "5130",
-      "number": "5.1.3",
-      "title": "Implement Accessibility Features of the Platform",
-      "level": "A",
+      "id": "0514",
+      "number": "5.1.4",
+      "title": "Allow Content Elements to be Rendered in Alternative Viewers",
+      "level": "AA",
       "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "If the user agent contains native interfaces, those native interfaces follow platform accessibility guidelines.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_513"
+      "notes": "Additional Info:"
     },
     {
-      "id": "5130",
-      "number": "5.1.3",
-      "title": "Implement Accessibility Features of the Platform",
-      "level": "A",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "If the user agent contains native interfaces, those native interfaces follow platform accessibility guidelines.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_513"
-    },
-    {
-      "id": "5130",
-      "number": "5.1.3",
-      "title": "Implement Accessibility Features of the Platform",
-      "level": "A",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "If the user agent contains native interfaces, those native interfaces follow platform accessibility guidelines.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_513"
-    },
-    {
-      "id": "5130",
-      "number": "5.1.3",
-      "title": "Implement Accessibility Features of the Platform",
-      "level": "A",
-      "result": "passed",
-      "notes": "",
-      "issue": "",
-      "description": "If the user agent contains native interfaces, those native interfaces follow platform accessibility guidelines.",
-      "url": "https://www.w3.org/TR/UAAG20/#sc_513"
+      "id": "0515",
+      "number": "5.1.5",
+      "title": "Enable Reporting of User Agent Accessibility Faults",
+      "level": "unknown",
+      "result": "unknown"
     }
   ],
   "wcag": [
