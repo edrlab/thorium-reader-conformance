@@ -1,11 +1,11 @@
 {
   "productName": "Thorium Reader Desktop",
-  "version": "3.0.0",
+  "version": "3",
   "platform": "Desktop (Windows, macOS, Linux)",
   "description": "Thorium Reader is a free and open-source EPUB reading application designed with accessibility as a core feature. This is the desktop version supporting Windows, macOS, and Linux platforms.",
   "reportDate": "2025-02-26",
   "evaluationDate": "2025-02-26",
-  "evaluationMethodology": "This report documents conformance evaluation of Thorium Reader Desktop version 3.0.0 against WCAG 2.2, UAAG 2.0, EPUB Accessibility 1.1, and DAISY User Requirements Standards. The evaluation methodology included: automated testing using accessibility scanning tools, manual accessibility review by accessibility professionals, user testing with assistive technologies (NVDA, JAWS on Windows; VoiceOver on macOS; Orca on Linux), functional testing with various EPUB publications, and keyboard navigation testing.",
+  "evaluationMethodology": "This report documents conformance evaluation of Thorium Reader Desktop version 3 against WCAG 2.2, UAAG 2.0, EPUB Accessibility 1.1, and DAISY User Requirements Standards. The evaluation methodology included: automated testing using accessibility scanning tools, manual accessibility review by accessibility professionals, user testing with assistive technologies (NVDA, JAWS on Windows; VoiceOver on macOS; Orca on Linux), functional testing with various EPUB publications, and keyboard navigation testing.",
   "conformanceLevel": "UAAG 2.0 Level AA, WCAG 2.2 Level AA, EPUB Accessibility 1.1",
   "conformanceSummary": "Thorium Reader Desktop provides comprehensive access to assistive technologies and numerous options to customize content rendering and interface behavior. The application achieves UAAG 2.0 Level AA and WCAG 2.2 Level AA conformance. In many scenarios, it meets Level AAA criteria. However, some limitations exist: interface zoom functionality can impact the reading experience, and a few specialized features remain untested.",
   "accessibilityHazards": "none",
@@ -35,7 +35,7 @@
   "changelog": [
     {
       "date": "2025-02-26",
-      "description": "Initial conformance report for Thorium Reader Desktop 3.0.0"
+      "description": "Initial conformance report for Thorium Reader Desktop 3"
     },
     {
       "date": "2025-01-15",
@@ -146,29 +146,33 @@
       "id": "0111",
       "number": "1.1.1",
       "title": "Render Alternative Content",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed",
+      "notes": "<code>Abbr</code> are rendered in a tooltip when they get focus.</li><li>Users can access `alt` text through TTS. However, that support can be enhanced by providing the `alt` text in the image viewing modal. See <a href=https://github.com/edrlab/thorium-reader/issues/3139>Issue #3139: Allow users to display alt texts to extend support for UAAG Guideline 1.1: Alternative content accessibility.</a> </li> <li>The video player allows to activate subtitles if they are available. Embed players are the responsibility of the ebook content creator. </li></ul>"
     },
     {
       "id": "0112",
       "number": "1.1.2",
       "title": "Indicate Unrendered Alternative Content",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "failed",
+      "notes": "<ul><li><code>Abbr</code> are indicated by a dotted underline.</li> <li><code>alt</code> text are not indicated. See <a href=https://github.com/edrlab/thorium-reader/issues/3139>Issue #3139: Allow users to display alt texts.</a> </li><li>The video player indic	ates the presence of subtitles if they are available. Embed players are the responsibility of the ebook content creator. </li></ul>"    
     },
     {
       "id": "0113",
       "number": "1.1.3",
       "title": "Replace Non-Text Content",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed",
+      "notes": "<p class="additional">Caption Clean view is available for TTS reading. It should be extended to visual reading (see <a href=https://github.com/edrlab/thorium-reader/issues/3141>Issue  #3141 Extend Caption / Clean View to visual reading (UAAG1.1.3 Replace Non-Text Content)</a>)</p>"
     },
     {
       "id": "0114",
       "number": "1.1.4",
       "title": "Facilitate Clear Display of Alternative Content for Time-based Media",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed",
+      "notes": "<p class="additional">The video player indicates the presence of subtitles if they are available. Embed players are the responsibility of the ebook content creator.</p>"
     },
     {
       "id": "0115",
@@ -176,7 +180,7 @@
       "title": "Provide Configurable Alternative Content Defaults",
       "level": "AA",
       "result": "failed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0116",
@@ -184,28 +188,30 @@
       "title": "Use Configurable Text for Time-based Media Captions",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0117",
       "number": "1.1.7",
       "title": "Allow Resize and Reposition of Time-based Media Alternatives",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AAA",
+      "result": "passed",
+      "notes": ""
     },
     {
       "id": "0121",
       "number": "1.2.1",
       "title": "Support Repair by Assistive Technologies",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AA",
+      "result": "passed",
+      "notes": ""
     },
     {
       "id": "0131",
       "number": "1.3.1",
       "title": "Distinguishable Highlighting",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed"
     },
     {
       "id": "0132",
@@ -213,7 +219,7 @@
       "title": "Highlighting Options",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0133",
@@ -221,7 +227,7 @@
       "title": "Highlighting Active Keyboard Focus",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0134",
@@ -229,56 +235,56 @@
       "title": "Distinguishing Enabled Elements",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0135",
       "number": "1.3.5",
       "title": "Distinguishing Enabled Elements",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AA",
+      "result": "passed"
     },
     {
       "id": "0141",
       "number": "1.4.1",
       "title": "Basic text formatting (Globally)",
-      "level": "unknown",
+      "level": "A",
       "result": "unknown"
     },
     {
       "id": "0142",
       "number": "1.4.2",
       "title": "Basic text formatting (by Element)",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AA",
+      "result": "passed"
     },
     {
       "id": "0143",
       "number": "1.4.3",
       "title": "Blocks of text (Globally)",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AA",
+      "result": "passed"
     },
     {
       "id": "0144",
       "number": "1.4.4",
       "title": "Configured and Reflowed Text Printing",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AA",
+      "result": "passed"
     },
     {
       "id": "0145",
       "number": "1.4.5",
       "title": "Default to platform text settings",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AA",
+      "result": "passed"
     },
     {
       "id": "0146",
       "number": "1.4.6",
       "title": "Advanced text formatting",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AAA",
+      "result": "passed"
     },
     {
       "id": "0151",
@@ -286,7 +292,7 @@
       "title": "Global Volume",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0161",
@@ -294,7 +300,7 @@
       "title": "Speech Rate, Volume, and Voice",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0162",
@@ -302,7 +308,7 @@
       "title": "Speech Pitch and Range",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0163",
@@ -310,7 +316,7 @@
       "title": "Synthesized Speech Features",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0164",
@@ -318,7 +324,7 @@
       "title": "Synthesized Speech Language",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0165",
@@ -326,7 +332,7 @@
       "title": "Advanced Speech Characteristics",
       "level": "AAA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0171",
@@ -334,7 +340,7 @@
       "title": "Disable Author Stylesheets",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0172",
@@ -342,21 +348,21 @@
       "title": "Support User Stylesheet or User Style Modification Mechanism",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0173",
       "number": "1.7.3",
       "title": "Apply User Stylesheets",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed"
     },
     {
       "id": "0174",
       "number": "1.7.4",
       "title": "Save Copies of Stylesheets",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AA",
+      "result": "passed"
     },
     {
       "id": "0181",
@@ -364,7 +370,7 @@
       "title": "Highlight Viewport",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0182",
@@ -372,7 +378,7 @@
       "title": "Move Viewport to Selection and Focus",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0183",
@@ -380,7 +386,7 @@
       "title": "Provide Viewport Scrollbars",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0184",
@@ -388,21 +394,22 @@
       "title": "Indicate Viewport Position",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0185",
       "number": "1.8.5",
       "title": "Allow Zoom",
       "level": "A",
-      "result": "failed"
+      "result": "failed",
+      "notes": "Additional Info: Reflowable contents can be adjusted in size and fixed layout contents can be zoomed. However the text from the interface cannot be resized. This is tracked in Issue <a href=\"https://github.com/edrlab/thorium-reader/issues/329\">Make the interface scalable</a>"
     },
     {
       "id": "0186",
       "number": "1.8.6",
       "title": "Maintain Point of Regard",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed"
     },
     {
       "id": "0187",
@@ -410,7 +417,7 @@
       "title": "Customize Viewport Highlighting",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0188",
@@ -418,7 +425,7 @@
       "title": "Allow Viewport Resize",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0189",
@@ -426,7 +433,7 @@
       "title": "Provide Viewport History",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "1810",
@@ -434,14 +441,14 @@
       "title": "Allow Top-Level Viewport Open on Request",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "1811",
       "number": "1.8.11",
       "title": "Allow Top-Level Viewport Focus Control",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AA",
+      "result": "passed"
     },
     {
       "id": "1812",
@@ -449,7 +456,7 @@
       "title": "Allow Same User Interface",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "1813",
@@ -457,7 +464,7 @@
       "title": "Multi-Column Text Reflow",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "1814",
@@ -465,7 +472,7 @@
       "title": "Ignore Fixed Unit Dimensions",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "1815",
@@ -473,14 +480,14 @@
       "title": "Linearize Content",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "1816",
       "number": "1.8.16",
       "title": "Provide Web Page Bookmarks",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AAA",
+      "result": "passed"
     },
     {
       "id": "0191",
@@ -488,7 +495,7 @@
       "title": "Outline View",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0192",
@@ -496,7 +503,7 @@
       "title": "Source View",
       "level": "AAA",
       "result": "failed",
-      "notes": "Additional Info: Source view is available only with development versions,\n\t\t\t\t\t\t\twithout LCP protection support."
+      "notes": "Source view is available only with development versions, without LCP protection support."
     },
     {
       "id": "1101",
@@ -504,42 +511,43 @@
       "title": "Show Related Elements",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "1102",
       "number": "1.10.2",
       "title": "Show Element Hierarchy",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AAA",
+      "result": "passed"
     },
     {
       "id": "0211",
       "number": "2.1.1",
       "title": "Provide Full Keyboard Functionality",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed"
     },
     {
       "id": "0212",
       "number": "2.1.2",
       "title": "Has Keyboard Focus",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed",
+      "notes": ""
     },
     {
       "id": "0213",
       "number": "2.1.3",
       "title": "Avoid Keyboard Traps",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed"
     },
     {
       "id": "0214",
       "number": "2.1.4",
       "title": "Separate Selection from Activation",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed"
     },
     {
       "id": "0215",
@@ -547,28 +555,28 @@
       "title": "Follow Text Keyboard Conventions",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0216",
       "number": "2.1.6",
       "title": "Make Keyboard Access Efficient",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed"
     },
     {
       "id": "0221",
       "number": "2.2.1",
       "title": "Sequential Navigation Between Elements",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed"
     },
     {
       "id": "0222",
       "number": "2.2.2",
       "title": "Sequential Navigation Between Landmarks",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed"
     },
     {
       "id": "0223",
@@ -576,14 +584,14 @@
       "title": "Default Navigation Order",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0224",
       "number": "2.2.4",
       "title": "Options for Wrapping in Navigation",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AA",
+      "result": "passed"
     },
     {
       "id": "0231",
@@ -591,7 +599,7 @@
       "title": "Allow Direct Navigation to Enabled Elements",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0232",
@@ -599,7 +607,7 @@
       "title": "Allow Direct Activation of Enabled Elements",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0233",
@@ -607,7 +615,7 @@
       "title": "Present Direct Commands from Rendered Content",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0234",
@@ -615,21 +623,21 @@
       "title": "Present Direct Commands in User Interface",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0235",
       "number": "2.3.5",
       "title": "Allow Customized Keyboard Commands",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AA",
+      "result": "passed"
     },
     {
       "id": "0241",
       "number": "2.4.1",
       "title": "Text Search",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed"
     },
     {
       "id": "0242",
@@ -637,7 +645,7 @@
       "title": "Search Direction",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0243",
@@ -645,7 +653,7 @@
       "title": "Match Found",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0244",
@@ -653,7 +661,7 @@
       "title": "Alert on Wrap or No Match",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0245",
@@ -661,7 +669,7 @@
       "title": "Alternative Content Search",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0251",
@@ -676,7 +684,7 @@
       "title": "Allow Persistent Accessibility Settings",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0262",
@@ -684,7 +692,7 @@
       "title": "Allow Restore All to Default",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0263",
@@ -692,14 +700,14 @@
       "title": "Allow Multiple Sets of Preference Settings",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0264",
       "number": "2.6.4",
       "title": "Allow Preference Changes from outside the User Interface",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AAA",
+      "result": "passed"
     },
     {
       "id": "0265",
@@ -707,21 +715,21 @@
       "title": "Make Preference Settings Transferable",
       "level": "AAA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0271",
       "number": "2.7.1",
       "title": "Customize Display of Controls for User Interface Commands, Functions, and Add-ons",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AA",
+      "result": "passed"
     },
     {
       "id": "0281",
       "number": "2.8.1",
       "title": "Adjustable Time Limits",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed"
     },
     {
       "id": "0291",
@@ -729,7 +737,7 @@
       "title": "Three Flashes or Below Threshold",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0292",
@@ -737,14 +745,15 @@
       "title": "Three Flashes",
       "level": "AAA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "2101",
       "number": "2.10.1",
       "title": "Time-Based Media Load-Only",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed",
+      "notes": ""
     },
     {
       "id": "2102",
@@ -752,7 +761,7 @@
       "title": "Execution Placeholder",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "2103",
@@ -760,14 +769,15 @@
       "title": "Execution Toggle",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "2104",
       "number": "2.10.4",
       "title": "Adjustable Playback Rate for Prerecorded Content",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AA",
+      "result": "passed",
+      "notes": ""
     },
     {
       "id": "2105",
@@ -775,7 +785,7 @@
       "title": "Stop/Pause/Resume Time-Based Media",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "2106",
@@ -783,7 +793,7 @@
       "title": "Navigation of Time-Based Media by Time",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "2107",
@@ -791,7 +801,7 @@
       "title": "Navigation of Time-Based Media by Semantics",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "2108",
@@ -799,14 +809,15 @@
       "title": "Video Contrast and Brightness",
       "level": "AAA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "2111",
       "number": "2.11.1",
       "title": "Text Input With Any Device",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AA",
+      "result": "passed",
+      "notes": ""
     },
     {
       "id": "0311",
@@ -814,7 +825,7 @@
       "title": "Text Entry Undo",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0312",
@@ -822,7 +833,7 @@
       "title": "Settings Changes can be Reversed or Confirmed",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0313",
@@ -830,7 +841,7 @@
       "title": "Retrieval Progress",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0314",
@@ -838,7 +849,7 @@
       "title": "Spell Check",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0315",
@@ -846,7 +857,7 @@
       "title": "Back Button",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0316",
@@ -854,7 +865,7 @@
       "title": "Form Submission Confirm",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0317",
@@ -862,14 +873,15 @@
       "title": "Form Auto-Fill",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0318",
       "number": "3.1.8",
       "title": "Save Form Entries",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AA",
+      "result": "passed",
+      "notes": ""
     },
     {
       "id": "0321",
@@ -877,14 +889,15 @@
       "title": "Accessible Documentation",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0322",
       "number": "3.2.2",
       "title": "Describe Accessibility Features",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed",
+      "notes": ""
     },
     {
       "id": "0323",
@@ -892,7 +905,7 @@
       "title": "Document All Features",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0324",
@@ -900,7 +913,7 @@
       "title": "Changes Between Versions",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0325",
@@ -908,21 +921,23 @@
       "title": "Centralized View",
       "level": "AAA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0331",
       "number": "3.3.1",
       "title": "Avoid Unpredictable Focus",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed",
+      "notes": ""
     },
     {
       "id": "0411",
       "number": "4.1.1",
       "title": "Support Platform Accessibility Services",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed",
+      "notes": ""
     },
     {
       "id": "0412",
@@ -937,7 +952,7 @@
       "title": "Provide Equivalent Accessible Alternatives",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0414",
@@ -952,7 +967,7 @@
       "title": "Make Content Interaction Programmatically Available",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0511",
@@ -960,7 +975,7 @@
       "title": "Comply with WCAG",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0512",
@@ -968,14 +983,15 @@
       "title": "Implement Accessibility Features of Web Content Technology Specifications",
       "level": "A",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0513",
       "number": "5.1.3",
       "title": "Implement Accessibility Features of the Platform",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "A",
+      "result": "passed",
+      "notes": ""
     },
     {
       "id": "0514",
@@ -983,14 +999,15 @@
       "title": "Allow Content Elements to be Rendered in Alternative Viewers",
       "level": "AA",
       "result": "passed",
-      "notes": "Additional Info:"
+      "notes": ""
     },
     {
       "id": "0515",
       "number": "5.1.5",
       "title": "Enable Reporting of User Agent Accessibility Faults",
-      "level": "unknown",
-      "result": "unknown"
+      "level": "AAA",
+      "result": "passed",
+      "notes": ""
     }
   ],
   "wcag": [
