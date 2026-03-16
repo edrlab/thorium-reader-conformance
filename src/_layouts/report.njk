@@ -121,7 +121,7 @@
             </tr>
           </thead>
           <tbody>
-          {% for item in standardData | sortByNumber('number') %}
+          {% for item in standardData | sortByKey('id') %}
             <tr>
               <td>
                 <details>
