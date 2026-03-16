@@ -114,9 +114,9 @@
           </tr>
         </thead>
         <tbody>
-        {% for item in wsgData.wsg | sort(attribute='number') %}
+        {% for item in wsgData.wsg | sortByKey('id') %}
           <tr>
-            <td>
+            <td data-order="{{ item.id }}">
               <details>
                 <summary class="sc-title">
                   <a id="sc_wsg_{{ item.id }}" name="sc_wsg_{{ item.id }}"></a>
@@ -133,7 +133,7 @@
             </td>
             <td>                
             {% if item.notes %}
-              <p class="notes">{{ item.notes }}</p>
+              <p class="notes">{{ item.notes | safe }}</p>
             {% endif %}
               </td>
           </tr>

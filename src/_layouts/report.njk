@@ -121,9 +121,9 @@
             </tr>
           </thead>
           <tbody>
-          {% for item in standardData | sortByNumber('number') %}
+          {% for item in standardData | sortByKey('id') %}
             <tr>
-              <td>
+              <td data-order="{{ item.id }}">
                 <details>
                   <summary class="sc-title">
                     <a id="sc_{{ standard }}_{{ item.id }}" name="sc_{{ standard }}_{{ item.id }}"></a>
@@ -140,7 +140,7 @@
               </td>
               <td>                
               {% if item.notes %}
-                <p class="notes">{{ item.notes }}</p>
+                <p class="notes">{{ item.notes | safe }}</p>
               {% endif %}
               {% if item.additionalInfo %}
                  <p class="notes">{{ item.additionalInfo }}</p>
