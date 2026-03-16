@@ -1,11 +1,11 @@
 {
   "productName": "Thorium Reader Desktop",
-  "version": "3.0.0",
+  "version": "3",
   "platform": "Desktop (Windows, macOS, Linux)",
   "description": "Thorium Reader is a free and open-source EPUB reading application designed with accessibility as a core feature. This is the desktop version supporting Windows, macOS, and Linux platforms.",
   "reportDate": "2025-02-26",
   "evaluationDate": "2025-02-26",
-  "evaluationMethodology": "This report documents conformance evaluation of Thorium Reader Desktop version 3.0.0 against WCAG 2.2, UAAG 2.0, EPUB Accessibility 1.1, and DAISY User Requirements Standards. The evaluation methodology included: automated testing using accessibility scanning tools, manual accessibility review by accessibility professionals, user testing with assistive technologies (NVDA, JAWS on Windows; VoiceOver on macOS; Orca on Linux), functional testing with various EPUB publications, and keyboard navigation testing.",
+  "evaluationMethodology": "This report documents conformance evaluation of Thorium Reader Desktop version 3 against WCAG 2.2, UAAG 2.0, EPUB Accessibility 1.1, and DAISY User Requirements Standards. The evaluation methodology included: automated testing using accessibility scanning tools, manual accessibility review by accessibility professionals, user testing with assistive technologies (NVDA, JAWS on Windows; VoiceOver on macOS; Orca on Linux), functional testing with various EPUB publications, and keyboard navigation testing.",
   "conformanceLevel": "UAAG 2.0 Level AA, WCAG 2.2 Level AA, EPUB Accessibility 1.1",
   "conformanceSummary": "Thorium Reader Desktop provides comprehensive access to assistive technologies and numerous options to customize content rendering and interface behavior. The application achieves UAAG 2.0 Level AA and WCAG 2.2 Level AA conformance. In many scenarios, it meets Level AAA criteria. However, some limitations exist: interface zoom functionality can impact the reading experience, and a few specialized features remain untested.",
   "accessibilityHazards": "none",
@@ -35,7 +35,7 @@
   "changelog": [
     {
       "date": "2025-02-26",
-      "description": "Initial conformance report for Thorium Reader Desktop 3.0.0"
+      "description": "Initial conformance report for Thorium Reader Desktop 3"
     },
     {
       "date": "2025-01-15",
