@@ -156,7 +156,7 @@
       "title": "Indicate Unrendered Alternative Content",
       "level": "A",
       "result": "failed",
-      "notes": "<ul><li><code>Abbr</code> are indicated by a dotted underline.</li> <li><code>alt</code> text are not indicated. See <a href=https://github.com/edrlab/thorium-reader/issues/3139>Issue 3139: Allow users to display alt texts.</a> </li><li>The video player indic\tates the presence of subtitles if they are available. Embed players are the responsibility of the ebook content creator. </li></ul>"
+      "notes": "<ul><li><code>Abbr</code> are indicated by a dotted underline.</li> <li><code>alt</code> text are not indicated. See <a href=https://github.com/edrlab/thorium-reader/issues/3139>Issue 3139: Allow users to display alt texts.</a> </li><li>The video player indicates the presence of subtitles if they are available. Embed players are the responsibility of the ebook content creator. </li></ul>"
     },
     {
       "id": "0113",
