@@ -119,9 +119,9 @@
           </tr>
         </thead>
         <tbody>
-        {% for item in epubRS33Data.epubRS %}
+        {% for item in epubRS33Data.epubRS | sortByKey('id') %}
           <tr>
-            <td>
+            <td data-order="{{ item.id }}">
               <details>
                 <summary class="sc-title">
                   <a id="sc_epubrs33_{{ item.id }}" name="sc_epubrs33_{{ item.id }}"></a>
@@ -169,9 +169,9 @@
           </tr>
         </thead>
         <tbody>
-        {% for item in epubRSData.epubRS %}
+        {% for item in epubRSData.epubrs33 | sortByKey('id') %}
           <tr>
-            <td>
+            <td data-order="{{ item.id }}">
               <details>
                 <summary class="sc-title">
                   <a id="sc_epubrs_{{ item.id }}" name="sc_epubrs_{{ item.id }}"></a>
