@@ -133,7 +133,7 @@
             </td>
             <td>                
             {% if item.notes %}
-              <p class="notes">{{ item.notes }}</p>
+              <p class="notes">{{ item.notes | safe }}</p>
             {% endif %}
               </td>
           </tr>
