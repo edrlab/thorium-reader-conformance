@@ -13,7 +13,6 @@ module.exports = {
   // Accessibility Conformance Data
   accessibility: {
     desktop3: require('./desktop3-accessibility-conformance.json'),
-    desktop4: require('./desktop4-accessibility-conformance.json'),
     android: require('./android-accessibility-conformance.json'),
     ios: require('./ios-accessibility-conformance.json'),
     mobile: require('./android-accessibility-conformance.json'),
@@ -23,7 +22,6 @@ module.exports = {
   // Consolidated accessibility export (for backward compatibility)
   conformance: {
     desktop3: require('./desktop3-accessibility-conformance.json'),
-    desktop4: require('./desktop4-accessibility-conformance.json'),
     android: require('./android-accessibility-conformance.json'),
     ios: require('./ios-accessibility-conformance.json'),
     mobile: require('./android-accessibility-conformance.json'),
@@ -32,43 +30,33 @@ module.exports = {
 
   // EPUB Reading System 3.3 Support
   epubRS33: {
-    desktop3: require('./desktop3-epub-rs-33-support.json'),
-    desktop4: require('./desktop4-epub-rs-33-support.json')
+    desktop3: require('./desktop3-epub-rs-33-support.json')
   },
 
   // EPUB Reading System 3.4 Support (also referred to as epub_rs)
   epubRS34: {
-    desktop3: require('./desktop3-epub-rs-support.json'),
-    desktop4: require('./desktop4-epub-rs-support.json')
+    desktop3: require('./desktop3-epub-rs-support.json')
   },
 
   // Alias for EPUB RS 3.4
   epubRS: {
-    desktop3: require('./desktop3-epub-rs-support.json'),
-    desktop4: require('./desktop4-epub-rs-support.json')
+    desktop3: require('./desktop3-epub-rs-support.json')
   },
 
   // Web Sustainability Guidelines Conformance
   wsg: {
-    desktop3: require('./desktop3-wsg-conformance.json'),
-    desktop4: require('./desktop4-wsg-conformance.json')
+    desktop3: require('./desktop3-wsg-conformance.json')
   },
 
   // Android accessibility (for backward compatibility with accessibility_3)
   accessibility3: require('./desktop3-accessibility-conformance.json'),
 
-  // Desktop 4 accessibility (for backward compatibility with accessibility_4)
-  accessibility4: require('./desktop4-accessibility-conformance.json'),
-
   // EPUB RS 3.3 variants
   epubRS33_3: require('./desktop3-epub-rs-33-support.json'),
-  epubRS33_4: require('./desktop4-epub-rs-33-support.json'),
 
   // EPUB RS 3.4 variants
   epubRS34_3: require('./desktop3-epub-rs-support.json'),
-  epubRS34_4: require('./desktop4-epub-rs-support.json'),
 
   // WSG variants
-  wsg3: require('./desktop3-wsg-conformance.json'),
-  wsg4: require('./desktop4-wsg-conformance.json')
+  wsg3: require('./desktop3-wsg-conformance.json')
 };

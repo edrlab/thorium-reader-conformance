@@ -38,7 +38,6 @@ npm start     # Dev server with live reload
 │   │   └── wsg_support.js # Data accessor for WSG
 │   ├── documents/         # Markdown content pages
 │   │   ├── desktop3/      # Desktop 3.x platform reports
-│   │   ├── desktop4/      # Desktop 4.x platform reports
 │   │   ├── ios/           # iOS platform reports
 │   │   ├── android/       # Android platform reports
 │   │   └── web/           # Web platform reports
@@ -49,7 +48,7 @@ npm start     # Dev server with live reload
 
 ## Reports
 
-### Desktop 3.x & 4.x
+### Desktop 3.x
 - **EPUB Reading System 3.4 Conformance** - Assessment of Thorium Reader's compliance with W3C EPUB RS 3.4 specification
 - **EPUB Reading System 3.3 Conformance** - Assessment against earlier EPUB RS version
 - **Web Sustainability Guidelines** - Evaluation against sustainability best practices
@@ -98,17 +97,16 @@ Conformance data is stored as JSON with the following structure:
 
 ## Creating New Reports
 
-1. **Create Data File**: Add JSON conformance data to `src/data/desktop3-[spec]-conformance.json` and `src/data/desktop4-[spec]-conformance.json`
+1. **Create Data File**: Add JSON conformance data to `src/data/desktop3-[spec]-conformance.json`
 2. **Update Data Index**: Add exports to `src/data/index.js` to include the new data:
    ```javascript
    // Add to appropriate section, e.g.:
    mySpec: {
-     desktop3: require('./desktop3-[spec]-conformance.json'),
-     desktop4: require('./desktop4-[spec]-conformance.json')
+     desktop3: require('./desktop3-[spec]-conformance.json')
    }
    ```
 3. **Create Layout** (if needed): Create `src/_layouts/[spec]-report.njk` with custom styling
-4. **Create Report Pages**: Add markdown files to `src/documents/desktop3/[spec]-report.md` and `src/documents/desktop4/[spec]-report.md`:
+4. **Create Report Page**: Add markdown file to `src/documents/desktop3/[spec]-report.md`:
    ```yaml
    ---
    layout: [spec]-report.njk
@@ -118,7 +116,7 @@ Conformance data is stored as JSON with the following structure:
    date: YYYY-MM-DD
    ---
    ```
-5. **Update Navigation**: Add link in `src/documents/desktop3/index.md` and `src/documents/desktop4/index.md`
+5. **Update Navigation**: Add link in `src/documents/desktop3/index.md`
 6. **Build**: Run `npm run build` to generate the site
 
 ## File Structure
