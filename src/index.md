@@ -24,7 +24,7 @@ title: Home
   <section class="platforms-overview">
     <h2>Available Platforms</h2>
     <div class="platform-cards">
-      {% set platformOrder = ['desktop3', 'desktop4', 'web', 'ios', 'android'] %}
+      {% set platformOrder = ['desktop3', 'web', 'ios', 'android'] %}
       {% for key in platformOrder %}
         {% set platform = site.platforms[key] %}
         {% if platform %}

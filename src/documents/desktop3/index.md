@@ -29,6 +29,9 @@ Thorium Reader is a free, open-source EPUB reading application available for Win
 
 ### Documentation
 
+For Higher Education needs, we maintain an online [Higher Education Community Vendor Assessment Toolkit (google sheet)](https://docs.google.com/spreadsheets/d/1SDya5FGF1eakmwu_dSnqeeBqJLBFohGa/edit?usp=sharing&ouid=105423198055318923834&rtpof=true&sd=true) as well as a dedicated [security section](https://conformance.thoriumreader.com/documents/desktop3/technical-spec/#security-information).
+
+
 Explore detailed information about Thorium Reader Desktop using the links below:
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">

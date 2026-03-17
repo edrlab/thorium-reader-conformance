@@ -96,6 +96,8 @@ Thorium Reader Desktop is available on the Windows store and can also be install
 
 Security vulnerabilities must be reported privately to maintainers through the dedicated [report a vulnerability page](https://github.com/edrlab/thorium-reader/security/advisories/new). A GitHub account is necessary. Alternatively, vulnerability reports can be sent by email at: [contact@edrlab.org](mailto:contact@edrlab.org).
 
+For Higher Education needs, we maintain an online [Higher Education Community Vendor Assessment Toolkit (google sheet)](https://docs.google.com/spreadsheets/d/1SDya5FGF1eakmwu_dSnqeeBqJLBFohGa/edit?usp=sharing&ouid=105423198055318923834&rtpof=true&sd=true) 
+
 ISO 27001 certifications, SOC 2 Type II reports, or similar assurances apply to the information‑security management and services operated by content providers, not to the Thorium Reader desktop application itself.
 
 ### Data protection {#data-protection}
@@ -150,4 +152,4 @@ Full release notes are available from the [code repository release page](https:/
 
 EDRLab is the owner of the Application, including all copyrights, trademarks, trade names, logos, patents, trade secrets and other intellectual property rights relating thereto. EDRLab may license third parties for the use or operation of the Application.
 
-For complete and up to date Terms of use, please see the [Terms of Use](/documents/desktop/terms-of-use/) page.
+For complete and up to date Terms of use, please see the [Terms of Use](/documents/desktop3/terms-of-use/) page.
