@@ -100,6 +100,10 @@ For Higher Education needs, we maintain an online [Higher Education Community Ve
 
 ISO 27001 certifications, SOC 2 Type II reports, or similar assurances apply to the information‑security management and services operated by content providers, not to the Thorium Reader desktop application itself.
 
+### Supply Chain Security {#supply-chain-security}
+
+We use [Socket.dev](https://socket.dev/) to monitor and analyze our dependencies for security vulnerabilities and supply chain risks, helping ensure the integrity of our codebase and protecting against dependency-related security threats.
+
 ### Data protection {#data-protection}
 
 Thorium Reader Desktop collects no personal data
