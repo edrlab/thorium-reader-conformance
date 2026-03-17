@@ -7,18 +7,18 @@ date: 2025-02-26
 
 This is the Web Sustainability Guidelines conformance report for **Thorium Reader Desktop**. This report assesses Thorium Reader's alignment with the [W3C Web Sustainability Guidelines](https://www.w3.org/TR/web-sustainability-guidelines/).
 
-## Overview
+## Overview {#overview}
 
 Thorium Reader Desktop is evaluated against the Web Sustainability Guidelines (WSG), which provide recommendations to help digital teams make informed sustainable development decisions. The evaluation assesses Thorium Reader across five key domains: User Experience Design, Web Development, Hosting & Infrastructure, Business Strategy, and Product Management.
 
-## Platform Details
+## Platform Details {#platform-details}
 
 - **Operating Systems**: Windows (10+), macOS (10.13+), Linux (various distributions)
 - **Architecture**: Electron-based desktop application
 - **Specification Version**: Web Sustainability Guidelines 1.0
 - **Reference**: [W3C Web Sustainability Guidelines](https://www.w3.org/TR/web-sustainability-guidelines/)
 
-## Sustainability Dimensions
+## Sustainability Dimensions {#sustainability-dimensions}
 
 ### User Experience Design
 
@@ -29,19 +29,19 @@ Thorium Reader demonstrates strong commitment to understanding user needs, with 
 - Visual customization options
 - No forced interactions or deceptive patterns
 
-#### Interface Efficiency
+#### Interface Efficiency {#interface-efficiency}
 The user interface is intentionally minimalist, presenting only essential features and controls. This reduces cognitive load, simplifies decision-making, and minimizes unnecessary interactions that would consume resources.
 
-#### Content Clarity
+#### Content Clarity {#content-clarity}
 Multilingual support across numerous languages, clear documentation, and accessible formatting ensure content is understandable to diverse audiences without additional processing overhead.
 
-#### Media Optimization
+#### Media Optimization {#media-optimization}
 Image and media rendering is optimized for performance, with user control over display options and lazy-loading where appropriate for EPUB publications.
 
-#### Cross-Platform Compatibility
+#### Cross-Platform Compatibility {#cross-platform-compatibility}
 The application maintains comprehensive compatibility across Windows, macOS, and Linux distributions, avoiding unnecessary duplicated effort or vendor lock-in.
 
-### Web Development
+### Web Development {#web-development}
 
 #### Code Quality & Optimization
 The codebase is optimized for size and performance through:
@@ -50,21 +50,21 @@ The codebase is optimized for size and performance through:
 - Clean, maintainable code following semantic practices
 - Open-source transparency enabling community audits
 
-#### Security Practices
+#### Security Practices {#security-practices}
 Regular security audits and prompt security updates ensure the application does not introduce vulnerabilities or unnecessary energy consumption from exploit mitigation.
 
-#### Dependency Management
+#### Dependency Management {#dependency-management}
 Dependencies are carefully selected, regularly updated, and maintained to ensure both security and performance optimization.
 
-### Hosting & Infrastructure
+### Hosting & Infrastructure {#hosting-infrastructure}
 
 #### Offline Access
 EPUB publications can be read offline with efficient local caching, reducing network requests and energy consumption.
 
-#### Flexible Deployment
+#### Flexible Deployment {#flexible-deployment}
 As open-source software, Thorium Reader can be deployed on sustainable infrastructure selected by users or hosting organizations based on their sustainability goals.
 
-### Business Strategy & Product Management
+### Business Strategy & Product Management {#business-strategy-product-management}
 
 #### Ethical Product Strategy
 Thorium Reader is developed under EDRLab's commitment to:
@@ -73,27 +73,27 @@ Thorium Reader is developed under EDRLab's commitment to:
 - Accessibility as a core value
 - Digital rights preservation
 
-#### Active Maintenance
+#### Active Maintenance {#active-maintenance}
 The project follows established product management practices with:
 - Regular releases and updates
 - Prompt bug fixes and security patches
 - Feature improvements based on user feedback
 - Long-term commitment to the project
 
-#### Necessity & Market Value
+#### Necessity & Market Value {#necessity-market-value}
 Thorium Reader addresses genuine user needs for:
 - Accessible EPUB reading across platforms
 - Privacy-respecting alternatives to commercial readers
 - Open standards support without vendor lock-in
 
-#### Inclusive & Open Practices
+#### Inclusive & Open Practices {#inclusive-open-practices}
 The project demonstrates JEDI commitment through:
 - Multilingual support (English, French, Spanish, and more)
 - Comprehensive accessibility features
 - Open-source development under GPL v3 license
 - Community-driven development
 
-## Testing & Verification
+## Testing & Verification {#testing-verification}
 
 Assessment methodology included:
 - Review of user experience design sustainability principles

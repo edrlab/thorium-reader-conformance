@@ -8,14 +8,14 @@ date: 2026-03-01
 
 This is the accessibility conformance report for **Thorium Reader Desktop**. Thorium Reader is a EPUB reading application designed with accessibility as a core feature.
 
-## Platform Details
+## Platform Details {#platform-details}
 
 - **Operating Systems**: Windows (10+), macOS (10.13+), Linux (various distributions)
 - **Architecture**: Based on Electron framework with web technologies
 - **Primary Focus**: Reading and navigation of EPUB publications
 - **Accessibility Features**: Screen reader support, keyboard navigation, text customization
 
-## Key Accessibility Features
+## Key Accessibility Features {#key-accessibility-features}
 
 ### Navigation & Interaction
 - Full keyboard navigation support
@@ -23,24 +23,24 @@ This is the accessibility conformance report for **Thorium Reader Desktop**. Tho
 - Keyboard shortcuts for common tasks
 - No keyboard traps
 
-### Visual Accessibility
+### Visual Accessibility {#visual-accessibility}
 - Adjustable font sizes
 - Customizable colors and contrast
 - User stylesheet support
 - Zoom functionality
 
-### Content Accessibility
+### Content Accessibility {#content-accessibility}
 - Support for EPUB accessibility features
 - Text-to-speech (when available)
 - Alternative text for images
 - Proper document semantics
 
-### Assistive Technology Support
+### Assistive Technology Support {#assistive-technology-support}
 - Screen reader compatibility (NVDA, JAWS, VoiceOver)
 - Platform accessibility APIs
 - ARIA support for interactive components
 
-## Testing Notes
+## Testing Notes {#testing-notes}
 
 All test results are based on version 3.0.0 of Thorium Reader. Tests were conducted using:
 - NVDA (Windows)
@@ -50,7 +50,7 @@ All test results are based on version 3.0.0 of Thorium Reader. Tests were conduc
 - Manual keyboard navigation testing
 - Functional testing with various EPUB publications
 
-## Summary
+## Summary {#summary}
 
 ###  strengths
     * Comprehensive keyboard navigation with all features accessible
@@ -61,13 +61,13 @@ All test results are based on version 3.0.0 of Thorium Reader. Tests were conduc
     * Clean, accessible user interface design
     * Accessible documentation in multiple languages
   
-###  limitations
+###  limitations {#limitations}
     * Interface zoom without breaking reading experience remains challenging
     * Citation generation feature not yet implemented
     * Text-to-speech caption view needs extension to visual reading mode for some scenarios
     * Tactile graphics support for refreshable Braille displays not yet available
 
-###  recommendations
+###  recommendations {#recommendations}
     * Continue enhancement of viewport zoom functionality to maintain reading experience integrity
     * Implement citation/reference generation for future versions
     * Extend caption/clean view mode to all visual reading scenarios

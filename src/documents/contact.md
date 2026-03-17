@@ -5,17 +5,17 @@ permalink: /documents/contact/
 date: 2026-03-01
 ---
 
-# Contact Information
+# Contact Information {#contact-information}
 
 We capture feedback about customers' experiences from an accessibility perspective through different channels:
 
-## Development
+## Development {#development}
 [Issue tracker with dedicated Accessibility Label](https://github.com/edrlab/thorium-reader/issues?q=is%3Aissue+is%3Aopen+label%3Aaccessibility)
 
-## Email
+## Email {#email}
 [EDRLab Contact Form](https://www.edrlab.org/contact/)
 
-## Community Feedback
+## Community Feedback {#community-feedback}
 Individual feedback collected by our [member organisations dedicated to serving people with disabilities](https://members.edrlab.org/categories/serving-persons-with-print-disabilities/)
 
 ---
