@@ -96,6 +96,8 @@ Thorium Reader Desktop is available on the Windows store and can also be install
 
 Security vulnerabilities must be reported privately to maintainers through the dedicated [report a vulnerability page](https://github.com/edrlab/thorium-reader/security/advisories/new). A GitHub account is necessary. Alternatively, vulnerability reports can be sent by email at: [contact@edrlab.org](mailto:contact@edrlab.org).
 
+ISO 27001 certifications, SOC 2 Type II reports, or similar assurances apply to the information‑security management and services operated by content providers, not to the Thorium Reader desktop application itself.
+
 ### Data protection {#data-protection}
 
 Thorium Reader Desktop collects no personal data
