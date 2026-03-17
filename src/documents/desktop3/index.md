@@ -59,7 +59,7 @@ Explore detailed information about Thorium Reader Desktop using the links below:
 
 <a href="/documents/desktop3/epub-rs-report/" style="display: inline-block; padding: 1.5rem; background-color: #0049b8; color: white; text-decoration: none; border-radius: 8px; text-align: center; font-weight: bold; transition: background-color 0.3s;">
   📚 EPUB Reading System 3.4
-  <p style="font-size: 0.85rem; margin-top: 0.5rem; font-weight: normal;">EPUB RS 3.4 specification conformance assessment</p>
+  <p style="font-size: 0.85rem; margin-top: 0.5rem; font-weight: normal;">EPUB RS  specification conformance assessment</p>
 </a>
 
 <a href="/documents/desktop3/wsg-report/" style="display: inline-block; padding: 1.5rem; background-color: #0049b8; color: white; text-decoration: none; border-radius: 8px; text-align: center; font-weight: bold; transition: background-color 0.3s;">
