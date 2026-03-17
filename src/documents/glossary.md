@@ -5,34 +5,34 @@ permalink: /documents/glossary/
 date: 2026-03-01
 ---
 
-# Glossary
+# Glossary {#glossary}
 
-## Evaluation and Report Language (EARL) 1.0 Schema
+## Evaluation and Report Language (EARL) 1.0 Schema {#evaluation-and-report-language-earl-10-schema}
 
 We refer to the Evaluation and Report Language (EARL) 1.0 Schema for defining the status of test results in our conformance assessments.
 
-### Test Result Status Values
+### Test Result Status Values {#test-result-status-values}
 
 The following status values are used to describe whether a subject passed or failed a test:
 
-#### **passed**
+#### **passed** {#passed}
 The subject passed the test. This indicates that the subject meets the requirements of the success criterion being evaluated.
 
-#### **failed**
+#### **failed** {#failed}
 The subject failed the test. This indicates that the subject does not meet the requirements of the success criterion being evaluated.
 
-#### **cantTell**
+#### **cantTell** {#canttell}
 It is unclear if the subject passed or failed the test. This status is used when there is insufficient information to make a determination, or when the test result is ambiguous.
 
-#### **inapplicable**
+#### **inapplicable** {#inapplicable}
 The test is not applicable to the subject. This status is used when a particular success criterion does not apply to the platform, feature set, or context being evaluated.
 
-#### **Untested**
+#### **Untested** {#untested}
 The test has not been carried out. This status indicates that the criterion has not yet been evaluated.
 
 ---
 
-### References
+### References {#references}
 
 - [EARL 1.0 Schema Documentation](https://www.w3.org/WAI/test-evaluate/evaluation-intros/)
 - [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/WAI/WCAG20/quickref/)

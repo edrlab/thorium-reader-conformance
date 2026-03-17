@@ -6,7 +6,7 @@ reportedPlatform: desktop
 date: 2026-03-01
 ---
 
-## Thorium Reader Desktop
+## Thorium Reader Desktop {#thorium-reader-desktop}
 
 Thorium Reader is a free, open-source EPUB reading application available for Windows, macOS, and Linux. Designed with accessibility as a core principle, it provides a seamless reading experience with comprehensive support for various digital publication formats.
 
@@ -15,7 +15,7 @@ Thorium Reader is a free, open-source EPUB reading application available for Win
 - **Operating Systems**: Windows 10+, macOS 10.13+, Linux (various distributions)
 - **Architecture**: Built on Electron with web technologies
 - **Version**: 3.0.0
-- **License**: Open Source (GPL v3)
+- **License**: Open Source (BSD-3-Clause license)
 
 ### Key Features
 

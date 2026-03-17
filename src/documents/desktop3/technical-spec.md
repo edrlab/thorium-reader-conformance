@@ -6,19 +6,19 @@ reportedPlatform: desktop3
 date: 2026-03-01
 ---
 
-# Technical Specification for Thorium Reader Desktop
+# Technical Specification for Thorium Reader Desktop {#technical-specification}
 
 Last updated 2025, November 27
 
 About Thorium Reader Desktop Version: 3
 
-## App Overview
+## App Overview {#app-overview}
 
 Purpose: Thorium is a digital book reader, it is also a library where you can store your books and access to online catalogs.
 
 Target Audience: General public with a particular attention for heavy readers, library-goers, and students.
 
-### Supported Operating Systems
+### Supported Operating Systems {#supported-operating-systems}
 
 - macOS (Monterey and up)
 - Windows (Windows 10 and up)
@@ -27,18 +27,18 @@ Target Audience: General public with a particular attention for heavy readers, l
   - Fedora 32 and newer
   - Debian 10 and newer
 
-### Hardware & Software Requirements
+### Hardware & Software Requirements {#hardware-software-requirements}
 
 - Both ARM 64 and AMD 64 architectures are supported via different installers.
 - No additional software is needed to run Thorium Reader Desktop.
 
-## Download, Installation, & Registration
+## Download, Installation, & Registration {#download-installation-registration}
 
-### Download
+### Download {#download}
 
 Thorium Reader Desktop is available on the Windows store and can also be installed directly from the installer files available from the [Thorium website](https://thorium.edrlab.org/). A standalone (with no need to be installed) AppImage is also available for Linux, once this one downloaded, it is necessary to change permissions to make it executable as a program, then double-click on the Icon to launch the app.
 
-### Installation
+### Installation {#installation}
 
 - On Windows:
   - Select the download link corresponding to your Windows architecture (ARM 64 or AMD 64), this information is available from your system information panel.
@@ -60,13 +60,13 @@ Thorium Reader Desktop is available on the Windows store and can also be install
   - Open the file manager and navigate to Downloads.
   - Double-click the downloaded *.deb file and complete the installation process. Managed devices may require admin authorization to install.
 
-### Accounts & passphrases
+### Accounts & passphrases {#accounts-passphrases}
 
 - No account nor registration are necessary to use Thorium Reader Desktop.
 - An account is necessary to access catalogs loaded into Thorium. In that case, the catalog provider is responsible for any related question, support or reclamation.
 - A passphrase can be necessary to read protected ebooks. This passphrase is stored by the application after being entered once, and is therefore requested once only. The provider of the protected ebook is responsible for any related question, support or reclamation.
 
-## Supported publication formats
+## Supported publication formats {#supported-publication-formats}
 
 - EPUB (Electronic PUBlication), version 2 and 3 including Reflowable, Fixed-Layout and MediaOverlay variants.
 - Web Publications both in their W3C and Readium flavors.
@@ -75,7 +75,7 @@ Thorium Reader Desktop is available on the Windows store and can also be install
 - Audiobooks standardized as per W3C packaged (LPF) audiobook format.
 - Divina, an experimental format for comics, manga, webtoons and other styles of digital works based on sequences of images.
 
-## App features
+## App features {#app-features}
 
 - **Load & Read ebooks**: Thorium Reader Desktop allows you to load an ebook from your computer and read it in a dedicated window.
 - **Organize ebooks**: ebooks can be sorted, tagged, exported, deleted and lending can be managed from the Library window.
@@ -90,24 +90,26 @@ Thorium Reader Desktop is available on the Windows store and can also be install
 - **User guide**: Users can download, read online or load as catalog a complete user guide as ebook.
 - **Offline support**: Thorium Reader Desktop can be used offline, however, online catalogs can not be accessed offline.
 
-## Security Information
+## Security Information {#security-information}
 
-### Security Reports
+### Security Reports {#security-reports}
 
 Security vulnerabilities must be reported privately to maintainers through the dedicated [report a vulnerability page](https://github.com/edrlab/thorium-reader/security/advisories/new). A GitHub account is necessary. Alternatively, vulnerability reports can be sent by email at: [contact@edrlab.org](mailto:contact@edrlab.org).
 
-### Data protection
+ISO 27001 certifications, SOC 2 Type II reports, or similar assurances apply to the information‑security management and services operated by content providers, not to the Thorium Reader desktop application itself.
+
+### Data protection {#data-protection}
 
 Thorium Reader Desktop collects no personal data
 
-### Permissions
+### Permissions {#permissions}
 
 Thorium Reader Desktop requires device access to the following:
 
 - File system access - Required for downloading digital content (e.g. books) and storing annotations.
 - Network access - Necessary for connecting third party catalogs and downloading digital content from those.
 
-### Network Communications
+### Network Communications {#network-communications}
 
 Thorium Reader Desktop works entirely offline by default. If network access is available, it uses only HTTP and HTTPS protocols, typically over ports 80 and 443, for these specific functions:
 
@@ -118,18 +120,18 @@ When users add third-party catalogs (such as OPDS feeds), Thorium Reader may con
 
 Thorium Reader Desktop does not use SSH, direct TCP connections, or WebSockets for any communication.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
 - **User guide**: is available in English, French and Spanish, as an ebook to Download or read online. The [complete user guide catalog](opds://edrlab.github.io/publications/feeds/thorium32_documentation.json) can be added to Thorium Reader. as EPUB, different translations are available through the Thorium documentation catalog.
 - **Support**: the webpage contains [support](https://thorium.edrlab.org/en/th3/) information in English, French and Spanish.
 - **Known/Common issues**: are available publicly from our [Issue tracker](https://github.com/edrlab/thorium-reader-doc/issues/new)
 - **Error Reports**: errors and problems should preferably be reported via our [support tracking tool](https://github.com/edrlab/thorium-reader-doc/issues/new) (require a free GitHub account) or [contact form](https://www.edrlab.org/contact/).
 
-## Version
+## Version {#version}
 
 Current Version: 3
 
-### Version File Sizes
+### Version File Sizes {#version-file-sizes}
 
 - Windows AMD .exe: 102 MB
 - Windows ARM .exe: 104 MB
@@ -140,11 +142,11 @@ Current Version: 3
 - Linux AMD .app: 135 MB
 - Linux ARM .app: 135 MB
 
-### Release Notes
+### Release Notes {#release-notes}
 
 Full release notes are available from the [code repository release page](https://github.com/edrlab/thorium-reader/releases/tag/v3.3.0)
 
-## Legal Information
+## Legal Information {#legal-information}
 
 EDRLab is the owner of the Application, including all copyrights, trademarks, trade names, logos, patents, trade secrets and other intellectual property rights relating thereto. EDRLab may license third parties for the use or operation of the Application.
 

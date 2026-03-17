@@ -8,14 +8,14 @@ date: 2026-03-01
 
 22 November 2022
 
-## Owner of the application
+## Owner of the application {#owner-of-the-application}
 
 European Digital Reading Lab
 5 rue de la Bûcherie
 75005 Paris
 France
 
-## Types of data collected
+## Types of data collected {#types-of-data-collected}
 
 The application does not collect Personal Data from its users.
 
@@ -44,6 +44,6 @@ Parameters of such notification are:
 
 The codebase of Thorium Reader is open-sourced and can therefore be fully inspected, with the exception of a small software library used as core for the Readium LCP DRM, which does not store or send any data.
 
-## Updates
+## Updates {#updates}
 
 We may change the Privacy Policy from time to time. We will notify you by posting the revised Privacy Policy on this page and the date on which the last changes were made will be noted at the top of the page.
