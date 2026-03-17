@@ -934,7 +934,7 @@
       "number": "5.26",
       "title": "Use open source where possible",
       "result": "untested",
-      "notes": "Entirely open-source project under GPL v3 license",
+      "notes": "Entirely open-source project under BSD-3-Clause license",
       "issue": "",
       "description": "Produce a policy around open collaboration and contribution to creating and sustaining open source projects.",
       "url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-open-source-where-possible"

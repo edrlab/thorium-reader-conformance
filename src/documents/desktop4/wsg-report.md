@@ -90,7 +90,7 @@ Thorium Reader addresses genuine user needs for:
 The project demonstrates JEDI commitment through:
 - Multilingual support (English, French, Spanish, and more)
 - Comprehensive accessibility features
-- Open-source development under GPL v3 license
+- Open-source development under BSD-3-Clause license
 - Community-driven development
 
 ## Testing & Verification #testing-verification}}
