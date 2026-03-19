@@ -5,7 +5,7 @@
   <section id="about-report">
     <h2>About This Report</h2>
     
-    {% set epubRSData = epub_rs %}
+    {% set epubRSData = index.epubRS.desktop3 %}
 
       <dl>
         <dt>Product Name:</dt>
@@ -100,7 +100,7 @@
     <h2>Detailed Assessment Results</h2>
 
     <!-- EPUB RS 3.3 Assessment -->
-    {% set epubRS33Data = epub_rs_33 %}
+    {% set epubRS33Data = index.epubRS33.desktop3 %}
     {% if epubRS33Data.epubRS and epubRS33Data.epubRS.length > 0 %}
     <div class="report-section">
     <details>

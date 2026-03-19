@@ -6,7 +6,7 @@
     <h2>About This Report</h2>
     
     {% set platformData = reportedPlatform if reportedPlatform else 'desktop' %}
-    {% set platformConformanceData = conformance[platformData] if conformance and conformance[platformData] else {} %}
+    {% set platformConformanceData = index.conformance[platformData] if index.conformance and index.conformance[platformData] else {} %}
 
       <dl>
         <dt>Product Name:</dt>
