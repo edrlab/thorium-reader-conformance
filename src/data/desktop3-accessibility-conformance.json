@@ -7,7 +7,7 @@
   "evaluationDate": "2025-02-26",
   "evaluationMethodology": "This report documents conformance evaluation of Thorium Reader Desktop version 3 against WCAG 2.2, UAAG 2.0, EPUB Accessibility 1.1, and DAISY User Requirements Standards. The evaluation methodology included: automated testing using accessibility scanning tools, manual accessibility review by accessibility professionals, user testing with assistive technologies (NVDA, JAWS on Windows; VoiceOver on macOS; Orca on Linux), functional testing with various EPUB publications, and keyboard navigation testing.",
   "conformanceLevel": "UAAG 2.0 Level AA, WCAG 2.2 Level AA, EPUB Accessibility 1.1",
-  "conformanceSummary": "Thorium Reader Desktop provides comprehensive access to assistive technologies and numerous options to customize content rendering and interface behavior. The application achieves UAAG 2.0 Level AA and WCAG 2.2 Level AA conformance. In many scenarios, it meets Level AAA criteria. However, some limitations exist: interface zoom functionality can impact the reading experience, and a few specialized features remain untested.",
+  "conformanceSummary": "Thorium Reader Desktop provides comprehensive access to assistive technologies and numerous options to customize content rendering and interface behavior. In many scenarios, it meets Level AAA criteria. However, some limitations exist: interface zoom functionality can impact the reading experience, and a few specialized features remain untested.",
   "accessibilityHazards": "none",
   "keyFindings": {
     "strengths": [

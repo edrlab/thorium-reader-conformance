@@ -55,15 +55,13 @@ npm start     # Dev server with live reload
 - **Accessibility Conformance** - WCAG, UAAG, and DAISY URS compliance assessment
 
 ### iOS (Beta)
-- Conformance reports for Thorium Reader iOS application
-- [Learn More](https://edrlab.notion.site/thorium-mobile-beta)
+- To be done
 
 ### Web (Beta)
-- Conformance reports for Thorium Reader Web platform
-- [Learn More](https://github.com/edrlab/thorium-web)
+- To be done
 
 ### Android (Coming Soon)
-- Conformance reports for Thorium Reader Android application
+- To be done
 
 ## Data Format
 
