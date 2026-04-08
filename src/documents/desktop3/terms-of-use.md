@@ -3,10 +3,10 @@ layout: content.njk
 title: Terms of Use - Desktop
 permalink: /documents/desktop3/terms-of-use/
 reportedPlatform: desktop3
-date: 2026-03-01
+date: 2026-04-08
 ---
 
-22 November 2022
+8 april 2026
 
 Please read carefully the following terms and conditions and the documents incorporated by reference therein (collectively, the “Terms of Use”) before you begin using the Thorium Reader application (the “Application”).
 
@@ -57,8 +57,15 @@ If any provision of these Terms of Use shall be deemed unlawful, void, or for an
 ## Absence of Waiver {#absence-of-waiver}
 The fact that EDRLab does not require the execution of any part of these terms of use does not constitute a waiver of its rights hereunder for past or future actions on the part of anyone.
 
-## Applicable Laws and Jurisdiction {#applicable-laws-and-jurisdiction}
-These Terms of Use and any dispute arising out of or relating to these Terms of Use shall be governed by the laws in force in France, without reference to its conflict of law rules. Any action, suit or proceeding arising out of these Terms of Use (whether for breach of contract, wrongful conduct or otherwise) shall be brought exclusively in France, as the case may be, located in Paris, and you agree to submit to the jurisdiction of such courts for any action, suit or proceeding arising out of these Terms of Use.
+## Dispute resolution, applicable laws and jurisdiction {#applicable-laws-and-jurisdiction}
+If you have any concern or dispute regarding the Application or these Terms of Use, you agree first to contact EDRLab at contact@edrlab.org and to make a good‑faith effort to resolve the dispute informally for at least thirty (30) days before initiating arbitration or court proceedings.
+To the fullest extent permitted by applicable law, any dispute, claim or controversy between you and EDRLab that relates in any way to or arises from your use of the Application or these Terms of Use (a “Dispute”) shall be resolved on an individual basis and, except as provided below, exclusively through binding arbitration. A Dispute will be submitted to arbitration, whether it is based on contract, statute, regulation, court order, tort or any other legal or equitable theory. You understand that in arbitration, there is no judge or jury and that judicial review of an arbitral award is limited.
+Unless otherwise required by mandatory law, the arbitration shall be administered by a recognised arbitration institution (for example, the ICC in Paris, or, for consumers in the United States, the American Arbitration Association) under its applicable rules for consumer or commercial disputes, as modified by this clause. The arbitration shall be conducted by a single arbitrator, in French or English, and, unless the arbitrator decides that an in‑person hearing is necessary, may be held by videoconference. The arbitrator shall apply the applicable governing law set out below and may award any remedies available at law or in equity. The arbitrator’s award shall be final and binding and may be entered in any court of competent jurisdiction.
+
+You agree that any arbitration or court proceeding will be conducted only on an individual basis, not as a class, collective, or representative action. To the fullest extent permitted by applicable law, you and EDRLab each waive any right to a jury trial in any court proceedings.
+Notwithstanding the foregoing, either you or EDRLab may: (a) bring an individual action in a court of competent jurisdiction for claims that fall within the jurisdiction of a small‑claims or equivalent court, or (b) seek provisional or injunctive relief in a court of competent jurisdiction to protect intellectual property rights or prevent unauthorised access to or use of the Application.
+You and we agree to submit to the exclusive jurisdiction of Paris, France. Unless prohibited by applicable law, and without regard to its conflict of laws principles, you and we agree that any Dispute between you and us will be governed by and construed in accordance with the laws of France.
+​In all cases, nothing in these Terms of Use is intended to waive any sovereign immunity, governmental immunity or other mandatory legal protection that cannot be contractually waived under applicable law.
 
 ## Contact Us {#contact-us}
 All questions, comments or requests regarding these terms of use should be sent to EDRLab at: [contact@edrlab.org](mailto:contact@edrlab.org).
