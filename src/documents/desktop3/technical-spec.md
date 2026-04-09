@@ -8,7 +8,7 @@ date: 2026-03-01
 
 # Technical Specification for Thorium Reader Desktop {#technical-specification}
 
-Last updated 2025, November 27
+Last updated 2026, April 9
 
 About Thorium Reader Desktop Version: 3
 
@@ -64,7 +64,7 @@ Thorium Reader Desktop is available on the Windows store and can also be install
 
 - No account nor registration are necessary to use Thorium Reader Desktop.
 - An account is necessary to access catalogs loaded into Thorium. In that case, the catalog provider is responsible for any related question, support or reclamation.
-- A passphrase can be necessary to read protected ebooks. This passphrase is stored by the application after being entered once, and is therefore requested once only. The provider of the protected ebook is responsible for any related question, support or reclamation.
+- A passphrase can be necessary to read protected ebooks. This passphrase is stored by the application after being entered once, and is therefore requested once only. The provider of the protected ebook is responsible for any related question, support or reclamation. Since version 3.4.0, the LCP passphrase input text field can show unmasked clear text.
 
 ## Supported publication formats {#supported-publication-formats}
 
@@ -78,12 +78,13 @@ Thorium Reader Desktop is available on the Windows store and can also be install
 ## App features {#app-features}
 
 - **Load & Read ebooks**: Thorium Reader Desktop allows you to load an ebook from your computer and read it in a dedicated window.
-- **Organize ebooks**: ebooks can be sorted, tagged, exported, deleted and lending can be managed from the Library window.
+- **Organize ebooks**: ebooks can be sorted, tagged, exported, deleted and lending can be managed from the Library window. Since version 3.4.0, users can filter and sort directly in the publication grid view mode of the library window, in addition to the existing table view functionality.
 - **Bookmark**: Users can add, comment, tag, modify, sort, access, export and import bookmarks.
-- **Annotate**: Users can add, personalize (with color and stroke), comment, tag, modify, sort, access, export and import annotations. **Note:** As of version 3.4.0, annotations and notes are stored exclusively in SQLite for improved performance and reliability.
+- **Annotate**: Users can add, personalize (with color and stroke), comment, tag, modify, sort, access, export and import annotations. **Note:** Since version 3.4.0, annotations and notes are stored exclusively in SQLite for improved performance and reliability.
 - **Filter**: Users can filter ebooks with a range of options, including free text (like search).
 - **Search**: Users can search inside an ebook, list and navigate between search results.
-- **Add & Browse catalogs**: Users can add catalogs in the OPDS format and browse them depending on the options provided by the catalog provider.
+- **Export to HTML**: Since version 3.4.0, users can export ebook content to HTML format using a keyboard shortcut.
+- **Add & Browse catalogs**: Users can add catalogs in the OPDS format and browse them depending on the options provided by the catalog provider. Since version 3.4.0, users can sort favorite OPDS feeds.
 - **Lend & acquire ebooks**: Users can download ebooks from catalogs for a timeless access or under a time period depending on the catalog provider terms of lending or acquisition.
 - **Personalize**: Users can personalize the reading experience according to the formats capacities.
 - **Accessibility**: Users can use assistive technology to access and use Thorium Reader Desktop.
@@ -139,18 +140,25 @@ Current Version: 3
 
 ### Version File Sizes {#version-file-sizes}
 
-- Windows AMD .exe: 102 MB
-- Windows ARM .exe: 104 MB
-- MacOS AMD .dmg: 129 MB
-- MacOS ARM .dmg: 129 MB
-- Linux AMD .deb: 89.6 MB
-- Linux ARM .deb: 84.8 MB
-- Linux AMD .app: 135 MB
-- Linux ARM .app: 135 MB
+- Windows AMD .exe: 113 MB
+- Windows ARM .exe: 120 MB
+- MacOS AMD .dmg: 139 MB
+- MacOS ARM .dmg: 131 MB
+- Linux AMD .deb: 105 MB
+- Linux ARM .deb: 99.3 MB
+- Linux AMD .app: 137 MB
+- Linux ARM .app: 137 MB
+
+### Major third-party dependencies {#technical-dependencies}
+
+Thorium makes notable use of 
+- Electron v41
+- Chromium v146
+- NodeJS v24
 
 ### Release Notes {#release-notes}
 
-Full release notes are available from the [code repository release page](https://github.com/edrlab/thorium-reader/releases/tag/v3.3.0)
+Full release notes are available from the [code repository release page](https://github.com/edrlab/thorium-reader/releases/tag/v3.4.0)
 
 ## Legal Information {#legal-information}
 
