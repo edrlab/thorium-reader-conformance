@@ -64,7 +64,7 @@ Thorium Reader Desktop is available on the Windows store and can also be install
 
 - No account nor registration are necessary to use Thorium Reader Desktop.
 - An account is necessary to access catalogs loaded into Thorium. In that case, the catalog provider is responsible for any related question, support or reclamation.
-- A passphrase can be necessary to read protected ebooks. This passphrase is stored by the application after being entered once, and is therefore requested once only. The provider of the protected ebook is responsible for any related question, support or reclamation. As of version 3.4.0, the LCP passphrase input text field can show unmasked clear text.
+- A passphrase can be necessary to read protected ebooks. This passphrase is stored by the application after being entered once, and is therefore requested once only. The provider of the protected ebook is responsible for any related question, support or reclamation. Since version 3.4.0, the LCP passphrase input text field can show unmasked clear text.
 
 ## Supported publication formats {#supported-publication-formats}
 
@@ -78,13 +78,13 @@ Thorium Reader Desktop is available on the Windows store and can also be install
 ## App features {#app-features}
 
 - **Load & Read ebooks**: Thorium Reader Desktop allows you to load an ebook from your computer and read it in a dedicated window.
-- **Organize ebooks**: ebooks can be sorted, tagged, exported, deleted and lending can be managed from the Library window. As of version 3.4.0, users can filter and sort directly in the publication grid view mode of the library window, in addition to the existing table view functionality.
+- **Organize ebooks**: ebooks can be sorted, tagged, exported, deleted and lending can be managed from the Library window. Since version 3.4.0, users can filter and sort directly in the publication grid view mode of the library window, in addition to the existing table view functionality.
 - **Bookmark**: Users can add, comment, tag, modify, sort, access, export and import bookmarks.
-- **Annotate**: Users can add, personalize (with color and stroke), comment, tag, modify, sort, access, export and import annotations. **Note:** As of version 3.4.0, annotations and notes are stored exclusively in SQLite for improved performance and reliability.
+- **Annotate**: Users can add, personalize (with color and stroke), comment, tag, modify, sort, access, export and import annotations. **Note:** Since version 3.4.0, annotations and notes are stored exclusively in SQLite for improved performance and reliability.
 - **Filter**: Users can filter ebooks with a range of options, including free text (like search).
 - **Search**: Users can search inside an ebook, list and navigate between search results.
-- **Export to HTML**: As of version 3.4.0, users can export ebook content to HTML format using a keyboard shortcut.
-- **Add & Browse catalogs**: Users can add catalogs in the OPDS format and browse them depending on the options provided by the catalog provider. As of version 3.4.0, users can sort favorite OPDS feeds.
+- **Export to HTML**: Since version 3.4.0, users can export ebook content to HTML format using a keyboard shortcut.
+- **Add & Browse catalogs**: Users can add catalogs in the OPDS format and browse them depending on the options provided by the catalog provider. Since version 3.4.0, users can sort favorite OPDS feeds.
 - **Lend & acquire ebooks**: Users can download ebooks from catalogs for a timeless access or under a time period depending on the catalog provider terms of lending or acquisition.
 - **Personalize**: Users can personalize the reading experience according to the formats capacities.
 - **Accessibility**: Users can use assistive technology to access and use Thorium Reader Desktop.
