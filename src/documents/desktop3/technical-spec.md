@@ -8,7 +8,7 @@ date: 2026-03-01
 
 # Technical Specification for Thorium Reader Desktop {#technical-specification}
 
-Last updated 2025, November 27
+Last updated 2026, April 9
 
 About Thorium Reader Desktop Version: 3
 
@@ -139,14 +139,14 @@ Current Version: 3
 
 ### Version File Sizes {#version-file-sizes}
 
-- Windows AMD .exe: 102 MB
-- Windows ARM .exe: 104 MB
-- MacOS AMD .dmg: 129 MB
-- MacOS ARM .dmg: 129 MB
-- Linux AMD .deb: 89.6 MB
-- Linux ARM .deb: 84.8 MB
-- Linux AMD .app: 135 MB
-- Linux ARM .app: 135 MB
+- Windows AMD .exe: 113 MB
+- Windows ARM .exe: 120 MB
+- MacOS AMD .dmg: 139 MB
+- MacOS ARM .dmg: 131 MB
+- Linux AMD .deb: 105 MB
+- Linux ARM .deb: 99.3 MB
+- Linux AMD .app: 137 MB
+- Linux ARM .app: 137 MB
 
 ### Release Notes {#release-notes}
 
