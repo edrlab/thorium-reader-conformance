@@ -3,7 +3,7 @@ layout: base.njk
 title: Conformance Report - iOS
 permalink: /documents/ios/
 reportedPlatform: ios
-date: 2026-03-01
+date: 2026-05-04
 ---
 
 ## Thorium Reader iOS
@@ -40,3 +40,7 @@ Thorium Reader for iOS is currently in active beta development. We welcome your 
 </a>
 
 </div>
+
+### Support & Help
+
+For comprehensive help, troubleshooting, and frequently asked questions, visit the [Thorium Reader Help Desk](https://support.thoriumreader.com/).

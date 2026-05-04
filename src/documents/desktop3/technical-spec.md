@@ -3,7 +3,7 @@ layout: content.njk
 title: Technical Specification - Desktop
 permalink: /documents/desktop3/technical-spec/
 reportedPlatform: desktop3
-date: 2026-03-01
+date: 2026-05-04
 ---
 
 # Technical Specification for Thorium Reader Desktop {#technical-specification}
@@ -131,6 +131,7 @@ Thorium Reader Desktop does not use SSH, direct TCP connections, or WebSockets f
 
 - **User guide**: is available in English, French and Spanish, as an ebook to Download or read online. The [complete user guide catalog](opds://edrlab.github.io/publications/feeds/thorium32_documentation.json) can be added to Thorium Reader. as EPUB, different translations are available through the Thorium documentation catalog.
 - **Support**: the webpage contains [support](https://thorium.edrlab.org/en/th3/) information in English, French and Spanish.
+- **Help Desk**: comprehensive help and frequently asked questions are available at the [Thorium Reader Help Desk](https://support.thoriumreader.com/).
 - **Known/Common issues**: are available publicly from our [Issue tracker](https://github.com/edrlab/thorium-reader-doc/issues/new)
 - **Error Reports**: errors and problems should preferably be reported via our [support tracking tool](https://github.com/edrlab/thorium-reader-doc/issues/new) (require a free GitHub account) or [contact form](https://www.edrlab.org/contact/).
 
