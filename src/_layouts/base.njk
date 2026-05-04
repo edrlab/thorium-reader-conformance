@@ -8,6 +8,8 @@
   <link rel="icon" href="https://www.edrlab.org/wp-content/uploads/2018/10/Miniature_blue.png" />
 </head>
 <body typeof="Book" vocab="https://schema.org">
+  <a href="#main" class="skip-link">Skip to main content</a>
+  
   <header class="sticky">
   <section class="hero">
     <img src="https://www.edrlab.org/wp-content/uploads/2018/10/Miniature_blue.png" alt="EDRLab" class="header-icon" />
@@ -27,7 +29,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     {% block content %}
     {{ content | safe }}
     {% endblock %}
