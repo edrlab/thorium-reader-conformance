@@ -70,5 +70,8 @@ Explore detailed information about Thorium Reader Desktop using the links below:
   <p style="font-size: 0.85rem; margin-top: 0.5rem; font-weight: normal;">W3C web sustainability principles and conformance</p>
 </a>
 
-
 </div>
+
+### Support & Help
+
+For comprehensive help, troubleshooting, and frequently asked questions, visit the [Thorium Reader Help Desk](https://support.thoriumreader.com/).
