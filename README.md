@@ -1,3 +1,44 @@
+# Thorium Reader Conformance Assessments (EDRLab)
+
+This repository hosts EDRLab’s materials related to **conformance assessments** for EPUB publications and reading systems, with a focus on accessibility (EPUB Accessibility 1.2, WCAG) and the Thorium Reader ecosystem.
+
+It is **not** the user documentation for Thorium Reader.  
+User guides and support documentation are available at:  
+https://support.thoriumreader.com/
+
+## Purpose
+
+This lab space provides:
+
+- Methodology and checklists used by EDRLab to evaluate:
+  - EPUB publications against [EPUB Accessibility 1.2](https://www.w3.org/TR/epub-a11y-12/)
+  - Reading systems against [EPUB Reading Systems 3.4](https://www.w3.org/TR/epub-rs-34/)
+- Sample conformance reports and evaluation templates
+- Notes on tooling, test files, and workflows used in assessments
+- Links to relevant standards and guidance (W3C, DAISY, etc.)
+
+## Scope
+
+Work in this repository covers:
+
+- Conformance assessment processes and criteria
+- Example evaluation reports (anonymized where appropriate)
+- Test EPUBs and test suites used internally by EDRLab
+- Documentation of how Thorium Reader is used as part of the assessment workflow
+
+## Standards and References
+
+Key references include:
+
+- [EPUB Accessibility 1.2](https://www.w3.org/TR/epub-a11y-12/)
+- [EPUB Accessibility 1.2 Explainer](https://www.w3.org/TR/epub-a11y-explain-12/)
+- [EPUB Reading Systems 3.4](https://www.w3.org/TR/epub-rs-34/)
+- [WCAG 2.x](https://www.w3.org/WAI/standards-guidelines/wcag/)
+
+## Contact
+
+For questions about these assessments or collaboration opportunities, please open an issue or contact EDRLab via the usual channels.
+
 # Thorium Reader Conformance Reports
 
 An 11ty static site generator for publishing and updating Thorium Reader conformance reports. This project generates beautiful, accessible HTML reports from structured JSON data conforming to W3C specifications and accessibility standards.
